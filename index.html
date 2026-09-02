@@ -183,7 +183,7 @@
     touch-action: pan-y;
   }
   .grip-zone { padding: 4px 0 10px; margin: -8px -10px 2px; touch-action: none; cursor: grab; }
-  .sheet .grip { width: 42px; height: 4px; border-radius: 2px; background: #c9c2a8; margin: 0 auto; }
+  .sheet .grip { width: 44px; height: 5px; border-radius: 3px; background: #c2bb9f; margin: 0 auto; }
 
   .peek {
     position: absolute; left: 0; right: 0; bottom: 0;
@@ -223,8 +223,7 @@
 
   /* ── Final scorecard ── */
   #final-sheet { padding-top: 10px; max-height: 82%; }
-  #final-sheet .grip { display: none; }
-  #final-sheet .grip-zone { padding: 2px 0 4px; }
+  #final-sheet .grip-zone { padding: 2px 0 6px; }
   #final-sheet .result-term { font-size: 22px; }
   #final-sheet .result-sub { font-size: 12px; margin: 3px auto 8px; max-width: 330px; }
   table.scorecard {
@@ -361,7 +360,7 @@
     <!-- minimized peeks -->
     <div class="peek" id="result-peek">
       <span class="peek-info" id="result-peek-info">🎯 · 1,000</span>
-      <span class="peek-hint">▲ details</span>
+      <span class="peek-hint">▲ tap for details</span>
       <button class="btn btn-primary btn-mini" id="btn-next-mini">Next →</button>
     </div>
     <div class="peek" id="final-peek">
@@ -432,7 +431,7 @@
 <div id="toast"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="verses.js?v=20260901e"></script>
-<script src="game.js?v=20260901e"></script>
+<script src="verses.js?v=20260901f"></script>
+<script src="game.js?v=20260901f"></script>
 </body>
 </html>

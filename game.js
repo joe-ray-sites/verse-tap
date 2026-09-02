@@ -76,7 +76,7 @@
       'In case of rapture, this tap will be unmanned. It already was.',
       'Honk if you love Jesus. Text if you need a map.',
       'That wasn’t a wrong turn. That was a different zip code.',
-      'CH_ _ CH: what’s missing? Any idea where you are.',
+      'CH_ _ CH: what’s missing? Any ideas where U R?',
       'Jesus, take the wheel. And the phone.',
       'Don’t give up. Jonah got there eventually, by fish.',
       'God works in mysterious ways. So did that tap.',
@@ -492,28 +492,48 @@
     gsap.set('#result-peek', { y: '110%' });
     gsap.set('#final-peek', { y: '110%' });
   }
+  // Swipe-down-to-dismiss from ANYWHERE on a sheet (not just the grip). The
+  // first move of a touch decides: downward while the sheet is scrolled to the
+  // top → we take the gesture and drag the sheet (preventDefault stops the
+  // native scroll); anything else → normal scrolling. Mouse users get the same
+  // via pointer events. Grip zone works as before, it's just part of the sheet.
   function enableSheetDrag(sheetId, onDismiss) {
     const sheet = $(sheetId);
-    const zone = sheet.querySelector('.grip-zone');
-    let startY = null, dy = 0, dragging = false;
-    zone.addEventListener('pointerdown', (e) => {
-      dragging = true; startY = e.clientY; dy = 0;
-      try { zone.setPointerCapture(e.pointerId); } catch {}
-    });
-    zone.addEventListener('pointermove', (e) => {
-      if (!dragging) return;
-      dy = Math.max(0, e.clientY - startY);
+    let startX = null, startY = null, dy = 0, mode = null;   // mode: null | 'drag' | 'scroll'
+    const begin = (x, y) => { startX = x; startY = y; dy = 0; mode = null; };
+    // returns true while we own the gesture (caller should preventDefault)
+    const move = (x, y) => {
+      if (startY === null || mode === 'scroll') return false;
+      const ddx = x - startX, ddy = y - startY;
+      if (!mode) {
+        if (sheet.scrollTop > 0) { mode = 'scroll'; return false; }
+        if (Math.abs(ddy) < 4 && Math.abs(ddx) < 4) return true;      // undecided: hold the scroll
+        mode = (ddy > 0 && Math.abs(ddy) >= Math.abs(ddx)) ? 'drag' : 'scroll';
+        if (mode === 'scroll') return false;
+        gsap.killTweensOf(sheet);
+      }
+      dy = Math.max(0, ddy);
       gsap.set(sheet, { y: dy });
-    });
-    const end = () => {
-      if (!dragging) return;
-      dragging = false;
-      if (dy > 60) onDismiss();
-      else gsap.to(sheet, { y: 0, duration: 0.25, ease: 'power2.out' });
-      dy = 0;
+      return true;
     };
-    zone.addEventListener('pointerup', end);
-    zone.addEventListener('pointercancel', end);
+    const end = () => {
+      if (mode === 'drag') {
+        if (dy > 60) onDismiss();
+        else gsap.to(sheet, { y: 0, duration: 0.25, ease: 'power2.out' });
+      }
+      startY = null; mode = null; dy = 0;
+    };
+    sheet.addEventListener('touchstart', (e) => begin(e.touches[0].clientX, e.touches[0].clientY), { passive: true });
+    sheet.addEventListener('touchmove', (e) => {
+      if (move(e.touches[0].clientX, e.touches[0].clientY)) e.preventDefault();
+    }, { passive: false });
+    sheet.addEventListener('touchend', end);
+    sheet.addEventListener('touchcancel', end);
+    // mouse / trackpad
+    sheet.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'touch') begin(e.clientX, e.clientY); });
+    sheet.addEventListener('pointermove', (e) => { if (e.pointerType !== 'touch' && e.buttons) move(e.clientX, e.clientY); });
+    sheet.addEventListener('pointerup', (e) => { if (e.pointerType !== 'touch') end(); });
+    sheet.addEventListener('pointercancel', (e) => { if (e.pointerType !== 'touch') end(); });
   }
 
   // ───────────────────────── Stats UI ─────────────────────────
@@ -609,6 +629,12 @@
   $('btn-next-mini').addEventListener('click', (e) => { e.stopPropagation(); nextRound(); });
   $('result-peek').addEventListener('click', restoreResult);
   $('final-peek').addEventListener('click', restoreFinal);
+
+  // touching the board while a sheet is up tucks it away (Tap-In behaviour)
+  $('board').addEventListener('pointerdown', () => {
+    if (state.phase === 'reveal') minimizeResult();
+    else if (state.phase === 'done') minimizeFinal();
+  });
 
   // ☰ menu
   const closeMenu = () => $('menu-overlay').classList.remove('show');
