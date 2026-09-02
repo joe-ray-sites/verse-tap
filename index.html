@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f1826">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<title>VerseTap 🎯</title>
+<style>
+  :root {
+    --night: #0f1826;
+    --night-light: #1a2740;
+    --teal: #1f7a70;
+    --teal-bright: #2fa596;
+    --cream: #f7f3e8;
+    --cream-dim: #cfc9b8;
+    --gold: #e6b94c;
+    --ink: #1b2130;
+    --green-ok: #2e8b57;
+    --red-bad: #c0453e;
+    --card-shadow: 0 -8px 40px rgba(0,0,0,.55);
+    --sat: env(safe-area-inset-top, 0px);
+    --sab: env(safe-area-inset-bottom, 0px);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
+    background: var(--night);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--cream);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+  }
+  #app { position: fixed; inset: 0; display: flex; flex-direction: column; }
+
+  /* ── Header ── */
+  header {
+    padding: calc(var(--sat) + 10px) 14px 8px;
+    background: linear-gradient(180deg, #0a111c 0%, var(--night) 100%);
+    border-bottom: 2px solid var(--gold);
+    display: flex; align-items: center; justify-content: space-between;
+    z-index: 10;
+  }
+  .brand { display: flex; flex-direction: column; gap: 1px; }
+  .brand h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 21px; letter-spacing: 1.5px; color: var(--cream);
+    font-weight: 700;
+  }
+  .brand h1 .tgt { color: var(--gold); }
+  .brand .date { font-size: 11px; color: var(--cream-dim); letter-spacing: .5px; }
+  .header-right { display: flex; align-items: center; gap: 8px; }
+  .score-chip {
+    background: #0a111c; border: 1.5px solid var(--gold); border-radius: 10px;
+    padding: 5px 12px; text-align: center; min-width: 74px;
+  }
+  .score-chip .lbl { font-size: 9px; letter-spacing: 1.5px; color: var(--gold); font-weight: 700; }
+  .score-chip .val { font-size: 20px; font-weight: 800; color: var(--cream); font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .icon-btn {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--night-light); border: 1.5px solid var(--cream-dim);
+    color: var(--cream); font-size: 16px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* ── Round banner ── */
+  #round-banner {
+    background: var(--cream); color: var(--ink);
+    margin: 10px 12px 0; border-radius: 12px; overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,.4);
+    z-index: 9; position: relative; flex-shrink: 0;
+  }
+  #round-banner .top {
+    background: var(--teal); color: var(--cream);
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 6px 12px; font-size: 12px; font-weight: 800; letter-spacing: 1px;
+  }
+  #round-banner .top .tier { color: var(--gold); }
+  #round-banner .prompt { padding: 9px 14px 10px; font-size: 15px; line-height: 1.35; }
+  #round-banner .prompt:empty { display: none; }
+  #round-banner .prompt b { color: var(--teal); }
+
+  /* ── Play area ── */
+  #board-wrap { flex: 1; position: relative; min-height: 0; display: flex; flex-direction: column; }
+  #board {
+    flex: 1; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch;
+    touch-action: pan-y; padding: 14px 14px calc(var(--sab) + 96px);
+  }
+  .verse-card {
+    background: linear-gradient(180deg, #fdfaf0, var(--cream));
+    color: var(--ink); border-radius: 14px; border: 1px solid #e6dfc6;
+    box-shadow: 0 6px 22px rgba(0,0,0,.35);
+    padding: 14px 16px 16px; position: relative;
+  }
+  .verse-card .card-tag {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 10px; letter-spacing: 2px; font-weight: 800; color: #8a8265; margin-bottom: 8px;
+  }
+  .verse-card .card-tag .trans-tag {
+    background: var(--ink); color: var(--gold); border-radius: 7px; padding: 3px 8px; letter-spacing: 1px;
+  }
+  .verse-card .vtext {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18.5px; line-height: 1.55;
+  }
+  .verse-card .vref {
+    margin-top: 10px; font-weight: 800; font-size: 13px; letter-spacing: 1px; color: var(--teal);
+    display: none;
+  }
+  .verse-card.revealed .vref { display: block; }
+
+  .strip-label {
+    margin: 16px 2px 8px; font-size: 10.5px; letter-spacing: 2px;
+    font-weight: 800; color: var(--cream-dim);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .strip-label .count { color: var(--gold); }
+  #strip { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .strip-div {
+    grid-column: 1 / -1; text-align: center; font-size: 10px; letter-spacing: 2px; font-weight: 800;
+    color: var(--gold); padding: 4px 0 0; display: flex; align-items: center; gap: 10px;
+  }
+  .strip-div::before, .strip-div::after { content: ''; flex: 1; height: 1px; background: rgba(230,185,76,.4); }
+  .bk {
+    background: linear-gradient(180deg, #fdfaf0, var(--cream)); color: var(--ink);
+    border: 1.5px solid #cdc4a2; border-radius: 12px;
+    padding: 12px 10px; font-size: 15px; font-weight: 700; font-family: inherit;
+    box-shadow: 0 3px 8px rgba(0,0,0,.35); cursor: pointer; text-align: center;
+    position: relative; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    transition: transform .12s, background .2s, color .2s, border-color .2s;
+  }
+  .bk:active { transform: scale(.96); }
+  .bk.sel {
+    background: linear-gradient(180deg, var(--teal-bright), var(--teal)); color: #fff;
+    border-color: var(--gold); box-shadow: 0 0 0 3px rgba(230,185,76,.45), 0 4px 12px rgba(0,0,0,.4);
+  }
+  /* reveal: inline heat colors are set by game.js; these decorate the two special cells */
+  #strip.revealed .bk { cursor: default; }
+  #strip.revealed .bk.heat { background-image: none; color: #fff; border-color: transparent; text-shadow: 0 1px 2px rgba(0,0,0,.3); }
+  #strip.revealed .bk.hit { border: 2px solid var(--gold); box-shadow: 0 0 0 3px rgba(230,185,76,.4), 0 4px 14px rgba(0,0,0,.45); }
+  #strip.revealed .bk.you { border: 2px solid var(--red-bad); box-shadow: 0 0 0 3px rgba(192,69,62,.45); }
+  .bk .badge {
+    position: absolute; top: -1px; right: -1px; font-size: 9px; letter-spacing: 1px; font-weight: 800;
+    padding: 2px 6px; border-radius: 0 10px 0 8px;
+  }
+  .bk.hit .badge { background: var(--gold); color: #3a2c00; }
+  .bk.you .badge { background: var(--red-bad); color: #fff; }
+
+  /* ── Submit bar ── */
+  #confirm-bar {
+    position: absolute; bottom: calc(var(--sab) + 16px); left: 16px; right: 16px;
+    display: none; gap: 10px; z-index: 8;
+  }
+  #confirm-bar.show { display: flex; }
+  .btn {
+    border: none; border-radius: 14px; font-weight: 800; letter-spacing: .5px;
+    font-size: 16px; padding: 15px 18px; font-family: inherit; cursor: pointer;
+  }
+  .btn-primary {
+    flex: 1; background: linear-gradient(180deg, var(--teal-bright), var(--teal));
+    color: #fff; box-shadow: 0 5px 20px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.25);
+  }
+  .btn-primary:active { transform: scale(.97); }
+  .btn-primary:disabled { opacity: .45; }
+  .btn-gold { background: linear-gradient(180deg, #f0cc6a, var(--gold)); color: #3a2c00; }
+  .btn-ghost { background: var(--night-light); color: var(--cream); border: 1.5px solid var(--cream-dim); }
+
+  /* ── Bottom sheets ── */
+  .sheet {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    background: var(--cream); color: var(--ink);
+    border-radius: 22px 22px 0 0; box-shadow: var(--card-shadow);
+    padding: 18px 20px calc(var(--sab) + 16px);
+    transform: translateY(110%); z-index: 20;
+    max-height: 76%; overflow-y: auto; -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+  .grip-zone { padding: 4px 0 10px; margin: -8px -10px 2px; touch-action: none; cursor: grab; }
+  .sheet .grip { width: 42px; height: 4px; border-radius: 2px; background: #c9c2a8; margin: 0 auto; }
+
+  .peek {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    background: var(--cream); color: var(--ink);
+    border-radius: 16px 16px 0 0; box-shadow: var(--card-shadow);
+    padding: 10px 16px calc(var(--sab) + 10px);
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    transform: translateY(110%); z-index: 19; cursor: pointer;
+  }
+  .peek .peek-info { font-weight: 800; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .peek .peek-hint { font-size: 11px; color: #8a8265; white-space: nowrap; }
+  .btn-mini { padding: 9px 16px; font-size: 13.5px; border-radius: 10px; flex-shrink: 0; }
+
+  .result-term {
+    font-family: Georgia, serif; font-size: 30px; font-weight: 800; text-align: center;
+    color: var(--teal); line-height: 1.1;
+  }
+  .result-term.bad { color: #a33; }
+  .result-sub {
+    text-align: center; font-size: 14px; color: #4a4433; font-style: italic;
+    margin: 7px auto 13px; max-width: 340px; line-height: 1.45;
+  }
+  .result-stats { display: flex; gap: 8px; margin-bottom: 13px; }
+  .stat-box {
+    flex: 1; background: #fff; border: 1.5px solid #ddd5bb; border-radius: 12px;
+    padding: 9px 6px; text-align: center;
+  }
+  .stat-box .k { font-size: 10px; letter-spacing: 1px; color: #8a8265; font-weight: 700; }
+  .stat-box .v { font-size: 19px; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .landing {
+    background: #efe8d2; border-left: 4px solid var(--gold); border-radius: 8px;
+    padding: 11px 13px; font-size: 14px; line-height: 1.5; color: #3d3826; margin-bottom: 10px;
+  }
+  .landing .vref { font-weight: 800; font-size: 14px; letter-spacing: 1px; color: var(--ink); display: block; }
+  .context-line { font-size: 12.5px; color: #6b6448; line-height: 1.5; margin-bottom: 14px; padding: 0 4px; }
+  .sheet .btn { width: 100%; }
+
+  /* ── Final scorecard ── */
+  #final-sheet { padding-top: 10px; max-height: 82%; }
+  #final-sheet .grip { display: none; }
+  #final-sheet .grip-zone { padding: 2px 0 4px; }
+  #final-sheet .result-term { font-size: 22px; }
+  #final-sheet .result-sub { font-size: 12px; margin: 3px auto 8px; max-width: 330px; }
+  table.scorecard {
+    width: 100%; border-collapse: collapse; margin: 6px 0 10px;
+    background: #fff; border-radius: 12px; overflow: hidden; border: 1.5px solid #ddd5bb;
+    font-size: 12.5px;
+  }
+  table.scorecard th {
+    background: var(--teal); color: var(--cream); padding: 6px 6px;
+    font-size: 10.5px; letter-spacing: 1px; text-align: left;
+  }
+  table.scorecard td { padding: 5px 6px; border-top: 1px solid #eee6cd; font-variant-numeric: tabular-nums; }
+  table.scorecard td.pts { text-align: right; font-weight: 800; }
+  table.scorecard td.sq { white-space: nowrap; }
+  table.scorecard tr.total td { font-weight: 800; background: #f7f2e0; border-top: 2px solid var(--gold); }
+  .streak-line { text-align: center; font-size: 12px; color: #6b6448; margin-bottom: 10px; line-height: 1.4; }
+  .final-actions { display: flex; gap: 10px; }
+  .final-actions .btn { flex: 1; padding: 12px 14px; font-size: 15px; }
+
+  /* ── Modals / loading / toast ── */
+  .overlay {
+    position: fixed; inset: 0; background: rgba(6,10,18,.84); z-index: 40;
+    display: none; align-items: center; justify-content: center; padding: 24px;
+  }
+  .overlay.show { display: flex; }
+  .modal {
+    background: var(--cream); color: var(--ink); border-radius: 18px;
+    padding: 22px; max-width: 380px; width: 100%; max-height: 80vh; overflow-y: auto;
+    touch-action: pan-y;
+  }
+  .modal h2 { font-family: Georgia, serif; color: var(--teal); margin-bottom: 10px; font-size: 22px; }
+  .modal p, .modal li { font-size: 14px; line-height: 1.55; margin-bottom: 9px; }
+  .modal ul { padding-left: 20px; margin-bottom: 10px; }
+  .modal .btn { width: 100%; margin-top: 6px; }
+  .band-table { width: 100%; font-size: 12.5px; border-collapse: collapse; margin-bottom: 12px; }
+  .band-table td { padding: 4px 6px; border-bottom: 1px solid #e5ddc3; }
+  .band-table td:last-child { text-align: right; color: #6b6448; }
+  .menu-list { display: flex; flex-direction: column; gap: 8px; }
+  .menu-item {
+    display: block; width: 100%; text-align: left; font-family: inherit; cursor: pointer;
+    background: #fff; border: 1.5px solid #ddd5bb; border-radius: 12px;
+    padding: 13px 14px; font-size: 15px; font-weight: 700; color: var(--ink);
+  }
+  .menu-item .sub { display: block; font-weight: 400; font-size: 11.5px; color: #8a8265; margin-top: 2px; }
+  .stat-grid { display: flex; gap: 8px; margin-bottom: 6px; }
+  .fine { font-size: 11px; color: #8a8265; text-align: center; margin-top: 8px; line-height: 1.4; }
+
+  #loading {
+    position: fixed; inset: 0; background: var(--night); z-index: 50;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+  }
+  #loading .glyph { font-size: 52px; animation: floaty 1.1s ease-in-out infinite alternate; }
+  @keyframes floaty { from { transform: translateY(0); } to { transform: translateY(-18px); } }
+  #loading .pun { font-size: 14px; color: var(--cream-dim); font-style: italic; }
+  #loading h1 { font-family: Georgia, serif; letter-spacing: 2px; }
+
+  #toast {
+    position: fixed; top: calc(var(--sat) + 70px); left: 50%; transform: translateX(-50%);
+    background: #0a111c; color: var(--cream); border: 1px solid var(--gold);
+    padding: 9px 18px; border-radius: 20px; font-size: 13px; z-index: 60;
+    opacity: 0; pointer-events: none; transition: opacity .3s; white-space: nowrap;
+  }
+  #toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand">
+      <h1>VERSE <span class="tgt">🎯</span> TAP</h1>
+      <div class="date" id="hdr-date"></div>
+    </div>
+    <div class="header-right">
+      <button class="icon-btn" id="btn-menu" aria-label="Menu">☰</button>
+      <button class="icon-btn" id="btn-help" aria-label="How to play">?</button>
+      <div class="score-chip">
+        <div class="lbl">POINTS</div>
+        <div class="val" id="total-score">0</div>
+      </div>
+    </div>
+  </header>
+
+  <div id="round-banner">
+    <div class="top">
+      <span id="round-label">ROUND 1 OF 5</span>
+      <span class="tier" id="round-tier">WELL-WORN VERSES</span>
+    </div>
+    <div class="prompt" id="round-prompt">Dealing today's verses…</div>
+  </div>
+
+  <div id="board-wrap">
+    <div id="board">
+      <div class="verse-card" id="verse-card">
+        <div class="card-tag"><span id="card-tag">📖 THE VERSE</span><span class="trans-tag">NIV</span></div>
+        <div class="vtext" id="verse-text"></div>
+        <div class="vref" id="verse-ref"></div>
+      </div>
+      <div class="strip-label"><span id="strip-label">TAP THE BOOK</span><span class="count" id="strip-count"></span></div>
+      <div id="strip"></div>
+    </div>
+
+    <div id="confirm-bar">
+      <button class="btn btn-primary" id="btn-confirm" disabled>🎯 Tap In</button>
+    </div>
+
+    <!-- Round result sheet -->
+    <div class="sheet" id="result-sheet">
+      <div class="grip-zone"><div class="grip"></div></div>
+      <div class="result-term" id="res-term">BULLSEYE</div>
+      <div class="result-sub" id="res-sub"></div>
+      <div class="result-stats">
+        <div class="stat-box"><div class="k">BOOKS OFF</div><div class="v" id="res-dist">—</div></div>
+        <div class="stat-box"><div class="k">SPEED BONUS</div><div class="v" id="res-bonus">—</div></div>
+        <div class="stat-box"><div class="k">ROUND SCORE</div><div class="v" id="res-pts">—</div></div>
+      </div>
+      <div class="landing"><span class="vref" id="res-ref"></span></div>
+      <div class="context-line" id="res-context"></div>
+      <button class="btn btn-primary" id="btn-next">Next Verse →</button>
+    </div>
+
+    <!-- Final scorecard sheet -->
+    <div class="sheet" id="final-sheet">
+      <div class="grip-zone"><div class="grip"></div></div>
+      <div class="result-term" id="final-title">GAME COMPLETE</div>
+      <div class="result-sub" id="final-quip"></div>
+      <table class="scorecard" id="final-table"></table>
+      <div class="streak-line" id="streak-line"></div>
+      <div class="final-actions">
+        <button class="btn btn-gold" id="btn-share">📋 Share Score</button>
+        <button class="btn btn-ghost" id="btn-practice">Practice</button>
+      </div>
+    </div>
+
+    <!-- minimized peeks -->
+    <div class="peek" id="result-peek">
+      <span class="peek-info" id="result-peek-info">🎯 · 1,000</span>
+      <span class="peek-hint">▲ details</span>
+      <button class="btn btn-primary btn-mini" id="btn-next-mini">Next →</button>
+    </div>
+    <div class="peek" id="final-peek">
+      <span class="peek-info" id="final-peek-info">🎯 0</span>
+      <span class="peek-hint">▲ tap for scorecard</span>
+    </div>
+  </div>
+</div>
+
+<!-- How to play -->
+<div class="overlay" id="help-overlay">
+  <div class="modal">
+    <h2>🎯 How to Play</h2>
+    <p>Read the verse, then <b>tap the book it's from</b> on the strip and hit <b>Tap In</b>. Five verses a day, no references.</p>
+    <ul>
+      <li>📏 Closer taps score more. Every book off costs points, but nothing scores zero.</li>
+      <li>📚 The strip grows from <b>10 books to 20</b> as the verses get harder.</li>
+      <li>📅 Same five verses for everyone. New set at midnight.</li>
+    </ul>
+    <table class="band-table">
+      <tr><td>🎯 Bullseye</td><td><b>950 pts</b></td></tr>
+      <tr><td>⚡ Speed bonus on bullseyes</td><td><b>up to +50</b></td></tr>
+      <tr><td>🔥 One book off</td><td><b>~750 pts</b></td></tr>
+      <tr><td>🏆 Max per day</td><td><b>5,000</b></td></tr>
+    </table>
+    <button class="btn btn-primary" id="btn-help-close">Let's Go</button>
+  </div>
+</div>
+
+<!-- Menu -->
+<div class="overlay" id="menu-overlay">
+  <div class="modal">
+    <h2>🎯 VerseTap</h2>
+    <div class="menu-list">
+      <button class="menu-item" id="mi-stats">📊 My Stats<span class="sub">Streak, best score and bullseyes</span></button>
+      <button class="menu-item" id="mi-practice">🧩 Practice Game<span class="sub">A spare set of verses — doesn't count</span></button>
+      <button class="menu-item" id="mi-help">❓ How to Play</button>
+    </div>
+    <p class="fine">Scripture quotations taken from The Holy Bible, New International Version® NIV®. Copyright © 1973, 1978, 1984, 2011 by Biblica, Inc.™ Used by permission. All rights reserved worldwide.</p>
+    <button class="btn btn-ghost" id="btn-menu-close" style="width:100%;margin-top:12px">Close</button>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="overlay" id="stats-overlay">
+  <div class="modal">
+    <h2>📊 My Stats</h2>
+    <div class="stat-grid">
+      <div class="stat-box"><div class="k">PLAYED</div><div class="v" id="st-played">0</div></div>
+      <div class="stat-box"><div class="k">STREAK</div><div class="v" id="st-streak">0</div></div>
+      <div class="stat-box"><div class="k">BEST STREAK</div><div class="v" id="st-max">0</div></div>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-box"><div class="k">BEST SCORE</div><div class="v" id="st-best">—</div></div>
+      <div class="stat-box"><div class="k">AVG SCORE</div><div class="v" id="st-avg">—</div></div>
+      <div class="stat-box"><div class="k">BULLSEYES</div><div class="v" id="st-bull">0</div></div>
+    </div>
+    <button class="btn btn-primary" id="stats-close" style="width:100%">Back to the Game</button>
+  </div>
+</div>
+
+<div id="loading">
+  <h1>VERSE 🎯 TAP</h1>
+  <div class="glyph">🎯</div>
+  <div class="pun" id="loading-pun">Shuffling the scrolls…</div>
+</div>
+
+<div id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="verses.js?v=20260901e"></script>
+<script src="game.js?v=20260901e"></script>
+</body>
+</html>
