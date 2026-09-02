@@ -40,8 +40,8 @@ Share text uses emoji squares per round: 🎯 bullseye, 🟩 1 off, 🟨 2–3, 
 |---|---|
 | `index.html` | All markup + CSS. Header, round banner, verse card + book strip, bottom sheets, modals, toast. |
 | `game.js` | One IIFE: daily scheduler, strip engine + distance scoring, heat-map reveal, storage, share, sheet UI kit. Sections labeled with `── banner comments ──`. |
-| `verses.js` | Content: `BIBLE_BOOKS` (66 NIV names in order) and `VERSE_TIERS`, 5 tiers × 24 entries of `{book, ref, context, text}`. |
-| `tools/fetch_verses.py` | Regenerates `verses.js` from bolls.life (NIV). Edit its `TIERS` list to add/swap verses, then `python3 tools/fetch_verses.py`. It strips psalm superscriptions and warns if a verse's text names its own book. |
+| `verses.js` | Content: `BIBLE_BOOKS` (66 NIV names in order) and `VERSE_TIERS`, 5 tiers × 90 entries of `{book, ref, context, text}` — 450 passages, 489 verses. |
+| `tools/fetch_verses.py` | Regenerates `verses.js` from bolls.life (NIV). Edit its `TIERS` list to add/swap verses, then `python3 tools/fetch_verses.py`. Pre-flight asserts tier sizes (multiples of 6), no duplicate refs, and the 500-verse ceiling; it strips psalm headings/superscriptions, warns if a verse's text names its own book, retries on rate limiting, and caches fetched passages in `tools/.fetch-cache.json` (gitignored) so re-runs resume. |
 | `.claude/launch.json` | Dev server (`python3 -m http.server 8473`) for Claude's browser preview. |
 | `Verse Tap.png` | Source artwork for the icons. `icon-512.png` and the favicons are the white background knocked out to transparency; `apple-touch-icon.png` is the same crop composited on the icon's edge blue (iOS paints black behind transparency). Icon links carry `?v=N` — bump it when the artwork changes. |
 
@@ -51,8 +51,8 @@ Share text uses emoji squares per round: 🎯 bullseye, 🟩 1 off, 🟨 2–3, 
   (`versetap-*-v1` keys; bump the suffix on schema changes).
 - **Date-seeded daily content**: `puzzleNumber()` is a pure function of the
   local calendar date (DST-proof); `mulberry32` + `hashStr` + seeded
-  Fisher-Yates deal the verses and the strip position. Each 24-verse tier deals
-  every verse exactly once per 24-day cycle, repeat gap ≥ 19 days.
+  Fisher-Yates deal the verses and the strip position. Each 90-verse tier deals
+  every verse exactly once per 90-day cycle, repeat gap ≥ 85 days.
 - **Versioned script tags** — `?v=YYYYMMDD` on `verses.js`/`game.js`; bump on
   every push or iOS serves stale JS (same-day pushes: append a letter).
 - **Share text** uses a scheme-less URL so iMessage keeps it inline.
@@ -77,7 +77,10 @@ swapped out), and psalm headings/superscriptions are stripped.
 > permission. All rights reserved worldwide.
 
 Biblica permits quoting up to 500 verses without written permission provided
-the notice appears; this app stores 120 passages.
+the notice appears (and the quoted verses amount to neither a complete book nor
+25% of the work). This app stores 450 passages totalling **489 verses** — the
+fetch tool refuses to build a pool over 500. Room for ~11 more single verses;
+beyond that, swap rather than add.
 
 ## Deploy (GitHub Pages)
 

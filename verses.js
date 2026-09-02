@@ -150,6 +150,402 @@ const VERSE_TIERS = [
     "ref": "Romans 6:23",
     "context": "Wages versus gift: Paul's starkest contrast.",
     "text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 23:4",
+    "context": "The valley of the shadow, from the shepherd psalm.",
+    "text": "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 46:10",
+    "context": "Be still: near the end of the psalm behind A Mighty Fortress.",
+    "text": "Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 118:24",
+    "context": "The morning verse for the day the Lord has made.",
+    "text": "This is the day the Lord has made; let us rejoice and be glad in it."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 51:10",
+    "context": "David's plea for a clean heart after Nathan confronted him.",
+    "text": "Create in me a pure heart, O God, and renew a steadfast spirit within me."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 34:8",
+    "context": "Taste and see, from a psalm David wrote after feigning madness.",
+    "text": "Taste and see that the Lord is good; blessed is the man who takes refuge in him."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 91:1",
+    "context": "The shelter of the Most High, opening line.",
+    "text": "He who dwells in the shelter of the Most High will rest in the shadow of the Almighty."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 56:3",
+    "context": "David, seized by the Philistines in Gath, decides where to put his fear.",
+    "text": "When I am afraid, I will trust in you."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 103:12",
+    "context": "How far God removes our sins, measured in compass points.",
+    "text": "as far as the east is from the west, so far has he removed our transgressions from us."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 150:6",
+    "context": "The last line of the whole Psalter.",
+    "text": "Let everything that has breath praise the Lord. Praise the Lord."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 4:23",
+    "context": "Guard your heart: a father's advice on where life flows from.",
+    "text": "Above all else, guard your heart, for it is the wellspring of life."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 16:3",
+    "context": "Commit your plans, and watch what happens to them.",
+    "text": "Commit to the Lord whatever you do, and your plans will succeed."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 17:17",
+    "context": "The proverb on friendship and hard times.",
+    "text": "A friend loves at all times, and a brother is born for adversity."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 15:1",
+    "context": "The gentle answer, and what it does to anger.",
+    "text": "A gentle answer turns away wrath, but a harsh word stirs up anger."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 1:7",
+    "context": "The thesis statement of the whole book of wisdom.",
+    "text": "The fear of the Lord is the beginning of knowledge, but fools despise wisdom and discipline."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 9:6",
+    "context": "The Christmas prophecy: a child, a son, four names.",
+    "text": "For to us a child is born, to us a son is given, and the government will be on his shoulders. And he will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 40:8",
+    "context": "Grass withers, flowers fall, one thing stands.",
+    "text": "The grass withers and the flowers fall, but the word of our God stands forever."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 6:8",
+    "context": "The prophet's response to a vision of the throne room.",
+    "text": "Then I heard the voice of the Lord saying, Whom shall I send? And who will go for us? And I said, Here am I. Send me!"
+   },
+   {
+    "book": 24,
+    "ref": "Jeremiah 1:5",
+    "context": "God's first words to a young prophet from Anathoth.",
+    "text": "Before I formed you in the womb I knew you, before you were born I set you apart; I appointed you as a prophet to the nations."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 5:9",
+    "context": "One of the Beatitudes, on peacemakers.",
+    "text": "Blessed are the peacemakers, for they will be called sons of God."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 6:9",
+    "context": "The opening of the Lord's Prayer.",
+    "text": "This, then, is how you should pray: ‘Our Father in heaven, hallowed be your name,"
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 19:26",
+    "context": "Jesus, after the rich young ruler walked away.",
+    "text": "Jesus looked at them and said, With man this is impossible, but with God all things are possible."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 22:39",
+    "context": "The second greatest commandment, per Jesus.",
+    "text": "And the second is like it: ‘Love your neighbor as yourself.’"
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 18:20",
+    "context": "Where two or three gather.",
+    "text": "For where two or three come together in my name, there am I with them."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 4:4",
+    "context": "Jesus answers the tempter in the wilderness with Deuteronomy.",
+    "text": "Jesus answered, It is written: ‘Man does not live on bread alone, but on every word that comes from the mouth of God.’"
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 7:7",
+    "context": "Jesus on prayer: three verbs, three promises.",
+    "text": "Ask, Seek, Knock Ask and it will be given to you; seek and you will find; knock and the door will be opened to you."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 28:20",
+    "context": "The last verse of the first gospel.",
+    "text": "and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age."
+   },
+   {
+    "book": 41,
+    "ref": "Mark 16:15",
+    "context": "Go into all the world, from the closing commission.",
+    "text": "He said to them, Go into all the world and preach the good news to all creation."
+   },
+   {
+    "book": 42,
+    "ref": "Luke 2:11",
+    "context": "The angel's announcement to the shepherds.",
+    "text": "Today in the town of David a Savior has been born to you; he is Christ the Lord."
+   },
+   {
+    "book": 42,
+    "ref": "Luke 23:34",
+    "context": "The first of Jesus' words from the cross.",
+    "text": "Jesus said, Father, forgive them, for they do not know what they are doing. And they divided up his clothes by casting lots."
+   },
+   {
+    "book": 43,
+    "ref": "John 1:14",
+    "context": "The Word became flesh.",
+    "text": "The Word became flesh and made his dwelling among us. We have seen his glory, the glory of the One and Only, who came from the Father, full of grace and truth."
+   },
+   {
+    "book": 43,
+    "ref": "John 3:17",
+    "context": "The verse right after the most famous one in the Bible.",
+    "text": "For God did not send his Son into the world to condemn the world, but to save the world through him."
+   },
+   {
+    "book": 43,
+    "ref": "John 8:32",
+    "context": "Truth and freedom, spoken to believers in the temple courts.",
+    "text": "Then you will know the truth, and the truth will set you free."
+   },
+   {
+    "book": 43,
+    "ref": "John 10:10",
+    "context": "The Good Shepherd contrasts his mission with the thief's.",
+    "text": "The thief comes only to steal and kill and destroy; I have come that they may have life, and have it to the full."
+   },
+   {
+    "book": 43,
+    "ref": "John 11:25",
+    "context": "Said to Martha moments before Lazarus walked out of the tomb.",
+    "text": "Jesus said to her, I am the resurrection and the life. He who believes in me will live, even though he dies;"
+   },
+   {
+    "book": 43,
+    "ref": "John 15:13",
+    "context": "Greater love, from the upper room discourse.",
+    "text": "Greater love has no one than this, that he lay down his life for his friends."
+   },
+   {
+    "book": 43,
+    "ref": "John 16:33",
+    "context": "Jesus' last words of comfort before his arrest.",
+    "text": "I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world."
+   },
+   {
+    "book": 43,
+    "ref": "John 14:27",
+    "context": "A parting gift no army or economy can issue.",
+    "text": "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid."
+   },
+   {
+    "book": 43,
+    "ref": "John 15:5",
+    "context": "From the upper room: the vine, the branches, and abiding.",
+    "text": "I am the vine; you are the branches. If a man remains in me and I in him, he will bear much fruit; apart from me you can do nothing."
+   },
+   {
+    "book": 43,
+    "ref": "John 8:12",
+    "context": "Spoken in the temple courts during the Feast of Tabernacles.",
+    "text": "The Validity of Jesus’ Testimony When Jesus spoke again to the people, he said, I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life."
+   },
+   {
+    "book": 44,
+    "ref": "Acts 2:38",
+    "context": "Peter's answer when the Pentecost crowd asked what to do.",
+    "text": "Peter replied, Repent and be baptized, every one of you, in the name of Jesus Christ for the forgiveness of your sins. And you will receive the gift of the Holy Spirit."
+   },
+   {
+    "book": 44,
+    "ref": "Acts 4:12",
+    "context": "Peter before the Sanhedrin, unable to stay quiet.",
+    "text": "Salvation is found in no one else, for there is no other name under heaven given to men by which we must be saved."
+   },
+   {
+    "book": 44,
+    "ref": "Acts 16:31",
+    "context": "The answer to the Philippian jailer's midnight question.",
+    "text": "They replied, Believe in the Lord Jesus, and you will be saved—you and your household."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 5:8",
+    "context": "God's love proved by its timing, not our merit.",
+    "text": "But God demonstrates his own love for us in this: While we were still sinners, Christ died for us."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 8:38-39",
+    "context": "Paul's list of everything that cannot separate us from God's love.",
+    "text": "For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 8:1",
+    "context": "The verdict for everyone who is in Christ Jesus.",
+    "text": "Life Through the Spirit Therefore, there is now no condemnation for those who are in Christ Jesus,"
+   },
+   {
+    "book": 45,
+    "ref": "Romans 15:13",
+    "context": "Paul's benediction of hope, joy and peace.",
+    "text": "May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit."
+   },
+   {
+    "book": 46,
+    "ref": "1 Corinthians 10:31",
+    "context": "Eating, drinking, and everything else, aimed at one purpose.",
+    "text": "So whether you eat or drink or whatever you do, do it all for the glory of God."
+   },
+   {
+    "book": 46,
+    "ref": "1 Corinthians 13:13",
+    "context": "The last word of the Bible's great chapter on love.",
+    "text": "And now these three remain: faith, hope and love. But the greatest of these is love."
+   },
+   {
+    "book": 47,
+    "ref": "2 Corinthians 5:7",
+    "context": "Six words that define the Christian's operating system.",
+    "text": "We live by faith, not by sight."
+   },
+   {
+    "book": 47,
+    "ref": "2 Corinthians 9:7",
+    "context": "The cheerful giver.",
+    "text": "Each man should give what he has decided in his heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."
+   },
+   {
+    "book": 48,
+    "ref": "Galatians 6:9",
+    "context": "Encouragement for anyone tired of doing the right thing.",
+    "text": "Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up."
+   },
+   {
+    "book": 49,
+    "ref": "Ephesians 4:32",
+    "context": "Forgiveness with a reason attached: you were forgiven first.",
+    "text": "Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you."
+   },
+   {
+    "book": 50,
+    "ref": "Philippians 1:6",
+    "context": "Paul's confidence about the work God started in his readers.",
+    "text": "being confident of this, that he who began a good work in you will carry it on to completion until the day of Christ Jesus."
+   },
+   {
+    "book": 50,
+    "ref": "Philippians 4:8",
+    "context": "Paul's list of what to think about.",
+    "text": "Finally, brothers, whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think about such things."
+   },
+   {
+    "book": 51,
+    "ref": "Colossians 3:17",
+    "context": "Whatever you do, in word or deed.",
+    "text": "And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him."
+   },
+   {
+    "book": 55,
+    "ref": "2 Timothy 1:7",
+    "context": "Paul reminds Timothy what kind of spirit he was given.",
+    "text": "For God did not give us a spirit of timidity, but a spirit of power, of love and of self-discipline."
+   },
+   {
+    "book": 55,
+    "ref": "2 Timothy 4:7",
+    "context": "Paul's epitaph, written from his last imprisonment.",
+    "text": "I have fought the good fight, I have finished the race, I have kept the faith."
+   },
+   {
+    "book": 58,
+    "ref": "Hebrews 13:5",
+    "context": "Contentment, and a promise never to be left.",
+    "text": "Keep your lives free from the love of money and be content with what you have, because God has said, Never will I leave you; never will I forsake you."
+   },
+   {
+    "book": 59,
+    "ref": "James 4:7",
+    "context": "Submit, resist, and watch the devil flee.",
+    "text": "Submit yourselves, then, to God. Resist the devil, and he will flee from you."
+   },
+   {
+    "book": 59,
+    "ref": "James 1:17",
+    "context": "Every good and perfect gift, and where it comes from.",
+    "text": "Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows."
+   },
+   {
+    "book": 60,
+    "ref": "1 Peter 2:9",
+    "context": "A chosen people, a royal priesthood.",
+    "text": "But you are a chosen people, a royal priesthood, a holy nation, a people belonging to God, that you may declare the praises of him who called you out of darkness into his wonderful light."
+   },
+   {
+    "book": 62,
+    "ref": "1 John 4:8",
+    "context": "God is love, in three words.",
+    "text": "Whoever does not love does not know God, because God is love."
+   },
+   {
+    "book": 62,
+    "ref": "1 John 4:19",
+    "context": "Why we love at all.",
+    "text": "We love because he first loved us."
+   },
+   {
+    "book": 66,
+    "ref": "Revelation 21:4",
+    "context": "No more tears, from the vision of the new Jerusalem.",
+    "text": "He will wipe every tear from their eyes. There will be no more death or mourning or crying or pain, for the old order of things has passed away."
+   },
+   {
+    "book": 1,
+    "ref": "Genesis 1:27",
+    "context": "Humanity made in God's image, on day six.",
+    "text": "So God created man in his own image, in the image of God he created him; male and female he created them."
+   },
+   {
+    "book": 2,
+    "ref": "Exodus 20:3",
+    "context": "The first commandment, from Mount Sinai.",
+    "text": "You shall have no other gods before me."
    }
   ]
  },
@@ -299,6 +695,402 @@ const VERSE_TIERS = [
     "ref": "James 1:5",
     "context": "James on where to get wisdom, and how generously it's given.",
     "text": "If any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 19:14",
+    "context": "David's closing prayer in a psalm about skies and Scripture.",
+    "text": "May the words of my mouth and the meditation of my heart be pleasing in your sight, O Lord, my Rock and my Redeemer."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 31:30",
+    "context": "From the closing poem on a wife of noble character.",
+    "text": "Charm is deceptive, and beauty is fleeting; but a woman who fears the Lord is to be praised."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 5:44",
+    "context": "Love your enemies: the Sermon on the Mount's hardest line.",
+    "text": "But I tell you: Love your enemies and pray for those who persecute you,"
+   },
+   {
+    "book": 41,
+    "ref": "Mark 9:23",
+    "context": "Jesus to a desperate father: everything is possible for one who believes.",
+    "text": "‘If you can’? said Jesus. Everything is possible for him who believes."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 12:21",
+    "context": "The last verse of Paul's chapter on living sacrifices.",
+    "text": "Do not be overcome by evil, but overcome evil with good."
+   },
+   {
+    "book": 46,
+    "ref": "1 Corinthians 16:14",
+    "context": "Paul's five-word sign-off instruction to Corinth.",
+    "text": "Do everything in love."
+   },
+   {
+    "book": 49,
+    "ref": "Ephesians 3:20",
+    "context": "Immeasurably more: Paul's doxology before the practical chapters.",
+    "text": "Now to him who is able to do immeasurably more than all we ask or imagine, according to his power that is at work within us,"
+   },
+   {
+    "book": 50,
+    "ref": "Philippians 4:19",
+    "context": "A promise about needs, from a thank-you note for a gift.",
+    "text": "And my God will meet all your needs according to his glorious riches in Christ Jesus."
+   },
+   {
+    "book": 58,
+    "ref": "Hebrews 4:16",
+    "context": "The invitation to approach the throne of grace.",
+    "text": "Let us then approach the throne of grace with confidence, so that we may receive mercy and find grace to help us in our time of need."
+   },
+   {
+    "book": 59,
+    "ref": "James 5:16",
+    "context": "The prayer of a righteous person.",
+    "text": "Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous man is powerful and effective."
+   },
+   {
+    "book": 62,
+    "ref": "1 John 4:4",
+    "context": "Greater is the one who is in you.",
+    "text": "You, dear children, are from God and have overcome them, because the one who is in you is greater than the one who is in the world."
+   },
+   {
+    "book": 66,
+    "ref": "Revelation 22:13",
+    "context": "Alpha and Omega, from the Bible's final chapter.",
+    "text": "I am the Alpha and the Omega, the First and the Last, the Beginning and the End."
+   },
+   {
+    "book": 5,
+    "ref": "Deuteronomy 31:8",
+    "context": "Moses' charge to Joshua in front of all Israel.",
+    "text": "The Lord himself goes before you and will be with you; he will never leave you nor forsake you. Do not be afraid; do not be discouraged."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 6:21",
+    "context": "Where your treasure is, from the Sermon on the Mount.",
+    "text": "For where your treasure is, there your heart will be also."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 16:11",
+    "context": "David on the path of life and the joy of God's presence.",
+    "text": "You have made known to me the path of life; you will fill me with joy in your presence, with eternal pleasures at your right hand."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 30:5",
+    "context": "Weeping for a night, joy in the morning.",
+    "text": "For his anger lasts only a moment, but his favor lasts a lifetime; weeping may remain for a night, but rejoicing comes in the morning."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 34:18",
+    "context": "Close to the brokenhearted.",
+    "text": "The Lord is close to the brokenhearted and saves those who are crushed in spirit."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 42:1",
+    "context": "The deer panting for streams of water.",
+    "text": "As the deer pants for streams of water, so my soul pants for you, O God."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 55:22",
+    "context": "Cast your cares, from a psalm David wrote after a friend's betrayal.",
+    "text": "Cast your cares on the Lord and he will sustain you; he will never let the righteous fall."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 73:26",
+    "context": "My flesh and my heart may fail, from Asaph's psalm of doubt.",
+    "text": "My flesh and my heart may fail, but God is the strength of my heart and my portion forever."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 119:11",
+    "context": "Word hidden in the heart, from the longest chapter in the Bible.",
+    "text": "I have hidden your word in my heart that I might not sin against you."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 127:1",
+    "context": "Unless the Lord builds the house, from a psalm of Solomon.",
+    "text": "Unless the Lord builds the house, its builders labor in vain. Unless the Lord watches over the city, the watchmen stand guard in vain."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 139:23-24",
+    "context": "Search me, God: the closing prayer of a psalm about being known.",
+    "text": "Search me, O God, and know my heart; test me and know my anxious thoughts. See if there is any offensive way in me, and lead me in the way everlasting."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 147:3",
+    "context": "He heals the brokenhearted.",
+    "text": "He heals the brokenhearted and binds up their wounds."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 24:1",
+    "context": "The earth is the Lord's, and everything in it.",
+    "text": "The earth is the Lord’s, and everything in it, the world, and all who live in it;"
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 14:12",
+    "context": "The way that appears right.",
+    "text": "There is a way that seems right to a man, but in the end it leads to death."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 16:18",
+    "context": "Pride, and what it goes before.",
+    "text": "Pride goes before destruction, a haughty spirit before a fall."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 1:18",
+    "context": "Sins like scarlet, white as snow.",
+    "text": "Come now, let us reason together, says the Lord. Though your sins are like scarlet, they shall be as white as snow; though they are red as crimson, they shall be like wool."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 43:19",
+    "context": "See, I am doing a new thing.",
+    "text": "See, I am doing a new thing! Now it springs up; do you not perceive it? I am making a way in the desert and streams in the wasteland."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 54:17",
+    "context": "No weapon forged against you.",
+    "text": "no weapon forged against you will prevail, and you will refute every tongue that accuses you. This is the heritage of the servants of the Lord, and this is their vindication from me, declares the Lord."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 6:14",
+    "context": "Forgive others, right after the Lord's Prayer.",
+    "text": "For if you forgive men when they sin against you, your heavenly Father will also forgive you."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 6:26",
+    "context": "Look at the birds of the air.",
+    "text": "Look at the birds of the air; they do not sow or reap or store away in barns, and yet your heavenly Father feeds them. Are you not much more valuable than they?"
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 14:27",
+    "context": "Take courage! Spoken while walking on the water.",
+    "text": "But Jesus immediately said to them: Take courage! It is I. Don’t be afraid."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 17:20",
+    "context": "Faith as small as a mustard seed.",
+    "text": "He replied, Because you have so little faith. I tell you the truth, if you have faith as small as a mustard seed, you can say to this mountain, ‘Move from here to there’ and it will move. Nothing will be impossible for you."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 25:21",
+    "context": "Well done, good and faithful servant.",
+    "text": "His master replied, ‘Well done, good and faithful servant! You have been faithful with a few things; I will put you in charge of many things. Come and share your master’s happiness!’"
+   },
+   {
+    "book": 41,
+    "ref": "Mark 8:36",
+    "context": "What good is it to gain the whole world?",
+    "text": "What good is it for a man to gain the whole world, yet forfeit his soul?"
+   },
+   {
+    "book": 42,
+    "ref": "Luke 6:38",
+    "context": "Give, and it will be given to you.",
+    "text": "Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you."
+   },
+   {
+    "book": 42,
+    "ref": "Luke 19:10",
+    "context": "Jesus explains why he invited himself to Zacchaeus' house.",
+    "text": "For the Son of Man came to seek and to save what was lost."
+   },
+   {
+    "book": 43,
+    "ref": "John 6:35",
+    "context": "I am the bread of life.",
+    "text": "Then Jesus declared, I am the bread of life. He who comes to me will never go hungry, and he who believes in me will never be thirsty."
+   },
+   {
+    "book": 43,
+    "ref": "John 10:11",
+    "context": "I am the good shepherd.",
+    "text": "I am the good shepherd. The good shepherd lays down his life for the sheep."
+   },
+   {
+    "book": 43,
+    "ref": "John 14:1",
+    "context": "Do not let your hearts be troubled.",
+    "text": "Jesus Comforts His Disciples Do not let your hearts be troubled. Trust in God; trust also in me."
+   },
+   {
+    "book": 43,
+    "ref": "John 1:12",
+    "context": "The right to become children of God.",
+    "text": "Yet to all who received him, to those who believed in his name, he gave the right to become children of God—"
+   },
+   {
+    "book": 43,
+    "ref": "John 20:29",
+    "context": "Spoken to Thomas one week after the resurrection.",
+    "text": "Then Jesus told him, Because you have seen me, you have believed; blessed are those who have not seen and yet have believed."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 1:16",
+    "context": "Paul is not ashamed of the gospel.",
+    "text": "I am not ashamed of the gospel, because it is the power of God for the salvation of everyone who believes: first for the Jew, then for the Gentile."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 5:1",
+    "context": "Peace with God through faith.",
+    "text": "Peace and Joy Therefore, since we have been justified through faith, we have peace with God through our Lord Jesus Christ,"
+   },
+   {
+    "book": 45,
+    "ref": "Romans 8:18",
+    "context": "Present sufferings versus coming glory.",
+    "text": "Future Glory I consider that our present sufferings are not worth comparing with the glory that will be revealed in us."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 8:31",
+    "context": "If God is for us.",
+    "text": "What, then, shall we say in response to this? If God is for us, who can be against us?"
+   },
+   {
+    "book": 45,
+    "ref": "Romans 8:37",
+    "context": "More than conquerors.",
+    "text": "No, in all these things we are more than conquerors through him who loved us."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 12:1",
+    "context": "Living sacrifices.",
+    "text": "Living Sacrifices Therefore, I urge you, brothers, in view of God’s mercy, to offer your bodies as living sacrifices, holy and pleasing to God—this is your spiritual act of worship."
+   },
+   {
+    "book": 46,
+    "ref": "1 Corinthians 6:19-20",
+    "context": "Your body is a temple; you were bought at a price.",
+    "text": "Do you not know that your body is a temple of the Holy Spirit, who is in you, whom you have received from God? You are not your own; you were bought at a price. Therefore honor God with your body."
+   },
+   {
+    "book": 46,
+    "ref": "1 Corinthians 15:55",
+    "context": "Where, O death, is your sting?",
+    "text": "Where, O death, is your victory? Where, O death, is your sting?"
+   },
+   {
+    "book": 47,
+    "ref": "2 Corinthians 5:21",
+    "context": "The great exchange: he became sin so we might become righteousness.",
+    "text": "God made him who had no sin to be sin for us, so that in him we might become the righteousness of God."
+   },
+   {
+    "book": 48,
+    "ref": "Galatians 3:28",
+    "context": "Neither Jew nor Gentile, slave nor free.",
+    "text": "There is neither Jew nor Greek, slave nor free, male nor female, for you are all one in Christ Jesus."
+   },
+   {
+    "book": 49,
+    "ref": "Ephesians 2:10",
+    "context": "God's handiwork, created for good works.",
+    "text": "For we are God’s workmanship, created in Christ Jesus to do good works, which God prepared in advance for us to do."
+   },
+   {
+    "book": 50,
+    "ref": "Philippians 4:4",
+    "context": "Rejoice in the Lord always. Again.",
+    "text": "Rejoice in the Lord always. I will say it again: Rejoice!"
+   },
+   {
+    "book": 50,
+    "ref": "Philippians 1:21",
+    "context": "Paul's ledger: both columns come out ahead.",
+    "text": "For to me, to live is Christ and to die is gain."
+   },
+   {
+    "book": 50,
+    "ref": "Philippians 3:13-14",
+    "context": "Forgetting what is behind, pressing on.",
+    "text": "Brothers, I do not consider myself yet to have taken hold of it. But one thing I do: Forgetting what is behind and straining toward what is ahead, I press on toward the goal to win the prize for which God has called me heavenward in Christ Jesus."
+   },
+   {
+    "book": 54,
+    "ref": "1 Timothy 4:12",
+    "context": "Don't let anyone look down on you because you are young.",
+    "text": "Don’t let anyone look down on you because you are young, but set an example for the believers in speech, in life, in love, in faith and in purity."
+   },
+   {
+    "book": 58,
+    "ref": "Hebrews 10:24-25",
+    "context": "Spur one another on; don't give up meeting together.",
+    "text": "And let us consider how we may spur one another on toward love and good deeds. Let us not give up meeting together, as some are in the habit of doing, but let us encourage one another—and all the more as you see the Day approaching."
+   },
+   {
+    "book": 58,
+    "ref": "Hebrews 12:1-2",
+    "context": "Throw off everything that hinders, fix your eyes on Jesus.",
+    "text": "God Disciplines His Sons Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles, and let us run with perseverance the race marked out for us. Let us fix our eyes on Jesus, the author and perfecter of our faith, who for the joy set before him endured the cross, scorning its shame, and sat down at the right hand of the throne of God."
+   },
+   {
+    "book": 59,
+    "ref": "James 1:22",
+    "context": "Do not merely listen to the word.",
+    "text": "Do not merely listen to the word, and so deceive yourselves. Do what it says."
+   },
+   {
+    "book": 59,
+    "ref": "James 2:17",
+    "context": "Faith without deeds is dead.",
+    "text": "In the same way, faith by itself, if it is not accompanied by action, is dead."
+   },
+   {
+    "book": 60,
+    "ref": "1 Peter 4:8",
+    "context": "Love covers over a multitude of sins.",
+    "text": "Above all, love each other deeply, because love covers over a multitude of sins."
+   },
+   {
+    "book": 62,
+    "ref": "1 John 3:1",
+    "context": "See what great love the Father has lavished on us.",
+    "text": "How great is the love the Father has lavished on us, that we should be called children of God! And that is what we are! The reason the world does not know us is that it did not know him."
+   },
+   {
+    "book": 62,
+    "ref": "1 John 4:18",
+    "context": "Perfect love drives out fear.",
+    "text": "There is no fear in love. But perfect love drives out fear, because fear has to do with punishment. The one who fears is not made perfect in love."
+   },
+   {
+    "book": 66,
+    "ref": "Revelation 21:5",
+    "context": "I am making everything new.",
+    "text": "He who was seated on the throne said, I am making everything new! Then he said, Write this down, for these words are trustworthy and true."
    }
   ]
  },
@@ -448,6 +1240,402 @@ const VERSE_TIERS = [
     "ref": "Titus 3:5",
     "context": "Paul reminding a young pastor on Crete how salvation works.",
     "text": "he saved us, not because of righteous things we had done, but because of his mercy. He saved us through the washing of rebirth and renewal by the Holy Spirit,"
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 32:8",
+    "context": "God's promise to instruct and counsel, in a psalm of confession.",
+    "text": "I will instruct you and teach you in the way you should go; I will counsel you and watch over you."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 133:1",
+    "context": "How good it is when God's people live together in unity.",
+    "text": "How good and pleasant it is when brothers live together in unity!"
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 11:25",
+    "context": "The generous person and the one who refreshes others.",
+    "text": "A generous man will prosper; he who refreshes others will himself be refreshed."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 13:20",
+    "context": "Walk with the wise.",
+    "text": "He who walks with the wise grows wise, but a companion of fools suffers harm."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 19:21",
+    "context": "Many plans, one purpose.",
+    "text": "Many are the plans in a man’s heart, but it is the Lord’s purpose that prevails."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 22:1",
+    "context": "A good name versus great riches.",
+    "text": "A good name is more desirable than great riches; to be esteemed is better than silver or gold."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 30:21",
+    "context": "A voice behind you saying, this is the way.",
+    "text": "Whether you turn to the right or to the left, your ears will hear a voice behind you, saying, This is the way; walk in it."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 64:8",
+    "context": "We are the clay, you are the potter.",
+    "text": "Yet, O Lord, you are our Father. We are the clay, you are the potter; we are all the work of your hand."
+   },
+   {
+    "book": 24,
+    "ref": "Jeremiah 32:27",
+    "context": "Is anything too hard for me? Asked while Babylon besieged Jerusalem.",
+    "text": "I am the Lord, the God of all mankind. Is anything too hard for me?"
+   },
+   {
+    "book": 39,
+    "ref": "Malachi 3:6",
+    "context": "I the Lord do not change.",
+    "text": "Robbing God I the Lord do not change. So you, O descendants of Jacob, are not destroyed."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 9:37",
+    "context": "The harvest is plentiful, the workers few.",
+    "text": "Then he said to his disciples, The harvest is plentiful but the workers are few."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 24:35",
+    "context": "Heaven and earth will pass away.",
+    "text": "Heaven and earth will pass away, but my words will never pass away."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 26:41",
+    "context": "The spirit is willing, from Gethsemane.",
+    "text": "Watch and pray so that you will not fall into temptation. The spirit is willing, but the body is weak."
+   },
+   {
+    "book": 41,
+    "ref": "Mark 11:24",
+    "context": "Whatever you ask for in prayer.",
+    "text": "Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours."
+   },
+   {
+    "book": 43,
+    "ref": "John 4:24",
+    "context": "God is spirit, said to a Samaritan woman at a well.",
+    "text": "God is spirit, and his worshipers must worship in spirit and in truth."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 10:17",
+    "context": "Faith comes from hearing.",
+    "text": "Consequently, faith comes from hearing the message, and the message is heard through the word of Christ."
+   },
+   {
+    "book": 46,
+    "ref": "1 Corinthians 2:9",
+    "context": "What no eye has seen.",
+    "text": "However, as it is written: No eye has seen, no ear has heard, no mind has conceived what God has prepared for those who love him—"
+   },
+   {
+    "book": 47,
+    "ref": "2 Corinthians 3:17",
+    "context": "Where the Spirit of the Lord is, there is freedom.",
+    "text": "Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom."
+   },
+   {
+    "book": 48,
+    "ref": "Galatians 5:1",
+    "context": "It is for freedom that Christ has set us free.",
+    "text": "Freedom in Christ It is for freedom that Christ has set us free. Stand firm, then, and do not let yourselves be burdened again by a yoke of slavery."
+   },
+   {
+    "book": 49,
+    "ref": "Ephesians 6:12",
+    "context": "Our struggle is not against flesh and blood.",
+    "text": "For our struggle is not against flesh and blood, but against the rulers, against the authorities, against the powers of this dark world and against the spiritual forces of evil in the heavenly realms."
+   },
+   {
+    "book": 51,
+    "ref": "Colossians 3:12-13",
+    "context": "Clothe yourselves with compassion.",
+    "text": "Therefore, as God’s chosen people, holy and dearly loved, clothe yourselves with compassion, kindness, humility, gentleness and patience. Bear with each other and forgive whatever grievances you may have against one another. Forgive as the Lord forgave you."
+   },
+   {
+    "book": 54,
+    "ref": "1 Timothy 6:10",
+    "context": "The love of money.",
+    "text": "For the love of money is a root of all kinds of evil. Some people, eager for money, have wandered from the faith and pierced themselves with many griefs."
+   },
+   {
+    "book": 58,
+    "ref": "Hebrews 11:6",
+    "context": "Without faith it is impossible to please God.",
+    "text": "And without faith it is impossible to please God, because anyone who comes to him must believe that he exists and that he rewards those who earnestly seek him."
+   },
+   {
+    "book": 59,
+    "ref": "James 1:19",
+    "context": "Quick to listen, slow to speak.",
+    "text": "Listening and Doing My dear brothers, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry,"
+   },
+   {
+    "book": 60,
+    "ref": "1 Peter 2:24",
+    "context": "By his wounds you have been healed.",
+    "text": "He himself bore our sins in his body on the tree, so that we might die to sins and live for righteousness; by his wounds you have been healed."
+   },
+   {
+    "book": 1,
+    "ref": "Genesis 8:22",
+    "context": "God's promise after the flood: seasons will not cease.",
+    "text": "As long as the earth endures, seedtime and harvest, cold and heat, summer and winter, day and night will never cease."
+   },
+   {
+    "book": 1,
+    "ref": "Genesis 18:14",
+    "context": "Asked at Abraham's tent when Sarah laughed.",
+    "text": "Is anything too hard for the Lord? I will return to you at the appointed time next year and Sarah will have a son."
+   },
+   {
+    "book": 2,
+    "ref": "Exodus 3:14",
+    "context": "God gives Moses his name at the burning bush.",
+    "text": "God said to Moses, I am who I am. This is what you are to say to the Israelites: ‘I am has sent me to you.’"
+   },
+   {
+    "book": 2,
+    "ref": "Exodus 34:6",
+    "context": "God describes himself to Moses on Sinai, the second time up.",
+    "text": "And he passed in front of Moses, proclaiming, The Lord, the Lord, the compassionate and gracious God, slow to anger, abounding in love and faithfulness,"
+   },
+   {
+    "book": 5,
+    "ref": "Deuteronomy 7:9",
+    "context": "The faithful God who keeps covenant to a thousand generations.",
+    "text": "Know therefore that the Lord your God is God; he is the faithful God, keeping his covenant of love to a thousand generations of those who love him and keep his commands."
+   },
+   {
+    "book": 5,
+    "ref": "Deuteronomy 33:27",
+    "context": "Everlasting arms, from Moses' final blessing.",
+    "text": "The eternal God is your refuge, and underneath are the everlasting arms. He will drive out your enemy before you, saying, ‘Destroy him!’"
+   },
+   {
+    "book": 6,
+    "ref": "Joshua 1:8",
+    "context": "Meditate on it day and night: instructions to a new commander.",
+    "text": "Do not let this Book of the Law depart from your mouth; meditate on it day and night, so that you may be careful to do everything written in it. Then you will be prosperous and successful."
+   },
+   {
+    "book": 9,
+    "ref": "1 Samuel 12:24",
+    "context": "An old judge's farewell charge to Israel.",
+    "text": "But be sure to fear the Lord and serve him faithfully with all your heart; consider what great things he has done for you."
+   },
+   {
+    "book": 11,
+    "ref": "1 Kings 19:12",
+    "context": "Not in the wind, earthquake or fire: a gentle whisper on Horeb.",
+    "text": "After the earthquake came a fire, but the Lord was not in the fire. And after the fire came a gentle whisper."
+   },
+   {
+    "book": 13,
+    "ref": "1 Chronicles 29:11",
+    "context": "David's prayer at the offering for the temple.",
+    "text": "Yours, O Lord, is the greatness and the power and the glory and the majesty and the splendor, for everything in heaven and earth is yours. Yours, O Lord, is the kingdom; you are exalted as head over all."
+   },
+   {
+    "book": 14,
+    "ref": "2 Chronicles 20:15",
+    "context": "Jahaziel to King Jehoshaphat: the battle is not yours.",
+    "text": "He said: Listen, King Jehoshaphat and all who live in Judah and Jerusalem! This is what the Lord says to you: ‘Do not be afraid or discouraged because of this vast army. For the battle is not yours, but God’s."
+   },
+   {
+    "book": 17,
+    "ref": "Esther 4:16",
+    "context": "If I perish, I perish.",
+    "text": "Go, gather together all the Jews who are in Susa, and fast for me. Do not eat or drink for three days, night or day. I and my maids will fast as you do. When this is done, I will go to the king, even though it is against the law. And if I perish, I perish."
+   },
+   {
+    "book": 18,
+    "ref": "Job 1:21",
+    "context": "Job's response to losing everything in one day.",
+    "text": "and said: Naked I came from my mother’s womb, and naked I will depart. The Lord gave and the Lord has taken away; may the name of the Lord be praised."
+   },
+   {
+    "book": 18,
+    "ref": "Job 38:4",
+    "context": "God's first question from the storm.",
+    "text": "Where were you when I laid the earth’s foundation? Tell me, if you understand."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 18:2",
+    "context": "Rock, fortress, deliverer: David's song after escaping Saul.",
+    "text": "The Lord is my rock, my fortress and my deliverer; my God is my rock, in whom I take refuge. He is my shield and the horn of my salvation, my stronghold."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 84:10",
+    "context": "Better is one day in your courts.",
+    "text": "Better is one day in your courts than a thousand elsewhere; I would rather be a doorkeeper in the house of my God than dwell in the tents of the wicked."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 86:11",
+    "context": "Give me an undivided heart.",
+    "text": "Teach me your way, O Lord, and I will walk in your truth; give me an undivided heart, that I may fear your name."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 145:18",
+    "context": "The Lord is near to all who call on him.",
+    "text": "The Lord is near to all who call on him, to all who call on him in truth."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 17:22",
+    "context": "A cheerful heart is good medicine.",
+    "text": "A cheerful heart is good medicine, but a crushed spirit dries up the bones."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 18:21",
+    "context": "The tongue has the power of life and death.",
+    "text": "The tongue has the power of life and death, and those who love it will eat its fruit."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 29:25",
+    "context": "Fear of man is a snare.",
+    "text": "Fear of man will prove to be a snare, but whoever trusts in the Lord is kept safe."
+   },
+   {
+    "book": 21,
+    "ref": "Ecclesiastes 3:11",
+    "context": "Eternity set in the human heart.",
+    "text": "He has made everything beautiful in its time. He has also set eternity in the hearts of men; yet they cannot fathom what God has done from beginning to end."
+   },
+   {
+    "book": 21,
+    "ref": "Ecclesiastes 9:10",
+    "context": "Whatever your hand finds to do.",
+    "text": "Whatever your hand finds to do, do it with all your might, for in the grave, where you are going, there is neither working nor planning nor knowledge nor wisdom."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 40:29",
+    "context": "Strength to the weary.",
+    "text": "He gives strength to the weary and increases the power of the weak."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 41:13",
+    "context": "I will hold your right hand.",
+    "text": "For I am the Lord, your God, who takes hold of your right hand and says to you, Do not fear; I will help you."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 55:6",
+    "context": "Seek the Lord while he may be found.",
+    "text": "Seek the Lord while he may be found; call on him while he is near."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 55:11",
+    "context": "God's word will not return empty.",
+    "text": "so is my word that goes out from my mouth: It will not return to me empty, but will accomplish what I desire and achieve the purpose for which I sent it."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 61:1",
+    "context": "The passage Jesus read aloud in the Nazareth synagogue.",
+    "text": "The Year of the Lord’s Favor The Spirit of the Sovereign Lord is on me, because the Lord has anointed me to preach good news to the poor. He has sent me to bind up the brokenhearted, to proclaim freedom for the captives and release from darkness for the prisoners,"
+   },
+   {
+    "book": 24,
+    "ref": "Jeremiah 6:16",
+    "context": "Ask for the ancient paths.",
+    "text": "This is what the Lord says: Stand at the crossroads and look; ask for the ancient paths, ask where the good way is, and walk in it, and you will find rest for your souls. But you said, ‘We will not walk in it.’"
+   },
+   {
+    "book": 24,
+    "ref": "Jeremiah 17:9",
+    "context": "The heart is deceitful above all things.",
+    "text": "The heart is deceitful above all things and beyond cure. Who can understand it?"
+   },
+   {
+    "book": 24,
+    "ref": "Jeremiah 29:12-13",
+    "context": "Two verses after the famous one: seek me with all your heart.",
+    "text": "Then you will call upon me and come and pray to me, and I will listen to you. You will seek me and find me when you seek me with all your heart."
+   },
+   {
+    "book": 26,
+    "ref": "Ezekiel 22:30",
+    "context": "Looking for someone to stand in the gap.",
+    "text": "I looked for a man among them who would build up the wall and stand before me in the gap on behalf of the land so I would not have to destroy it, but I found none."
+   },
+   {
+    "book": 29,
+    "ref": "Joel 2:25",
+    "context": "The years the locusts have eaten.",
+    "text": "I will repay you for the years the locusts have eaten— the great locust and the young locust, the other locusts and the locust swarm— my great army that I sent among you."
+   },
+   {
+    "book": 33,
+    "ref": "Micah 7:7",
+    "context": "But as for me, I watch in hope.",
+    "text": "But as for me, I watch in hope for the Lord, I wait for God my Savior; my God will hear me."
+   },
+   {
+    "book": 35,
+    "ref": "Habakkuk 2:3",
+    "context": "Though it linger, wait for it.",
+    "text": "For the revelation awaits an appointed time; it speaks of the end and will not prove false. Though it linger, wait for it; it will certainly come and will not delay."
+   },
+   {
+    "book": 38,
+    "ref": "Zechariah 4:10",
+    "context": "Who dares despise the day of small things?",
+    "text": "Who despises the day of small things? Men will rejoice when they see the plumb line in the hand of Zerubbabel. (These seven are the eyes of the Lord, which range throughout the earth.)"
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 7:13-14",
+    "context": "The narrow gate.",
+    "text": "The Narrow and Wide Gates Enter through the narrow gate. For wide is the gate and broad is the road that leads to destruction, and many enter through it. But small is the gate and narrow the road that leads to life, and only a few find it."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 10:16",
+    "context": "Sheep among wolves, shrewd as snakes.",
+    "text": "I am sending you out like sheep among wolves. Therefore be as shrewd as snakes and as innocent as doves."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 25:40",
+    "context": "Whatever you did for the least of these.",
+    "text": "The King will reply, ‘I tell you the truth, whatever you did for one of the least of these brothers of mine, you did for me.’"
+   },
+   {
+    "book": 42,
+    "ref": "Luke 12:32",
+    "context": "Do not be afraid, little flock.",
+    "text": "Do not be afraid, little flock, for your Father has been pleased to give you the kingdom."
+   },
+   {
+    "book": 42,
+    "ref": "Luke 23:43",
+    "context": "Today you will be with me in paradise.",
+    "text": "Jesus answered him, I tell you the truth, today you will be with me in paradise."
    }
   ]
  },
@@ -597,6 +1785,402 @@ const VERSE_TIERS = [
     "ref": "Jude 24-25",
     "context": "The doxology that closes one of the Bible's shortest letters.",
     "text": "Doxology To him who is able to keep you from falling and to present you before his glorious presence without fault and with great joy— to the only God our Savior be glory, majesty, power and authority, through Jesus Christ our Lord, before all ages, now and forevermore! Amen."
+   },
+   {
+    "book": 1,
+    "ref": "Genesis 15:6",
+    "context": "Abram believed, and it was credited to him as righteousness.",
+    "text": "Abram believed the Lord, and he credited it to him as righteousness."
+   },
+   {
+    "book": 5,
+    "ref": "Deuteronomy 10:12",
+    "context": "What does the Lord ask of you? Moses' summary.",
+    "text": "Fear the Lord And now, O Israel, what does the Lord your God ask of you but to fear the Lord your God, to walk in all his ways, to love him, to serve the Lord your God with all your heart and with all your soul,"
+   },
+   {
+    "book": 6,
+    "ref": "Joshua 1:5",
+    "context": "As I was with Moses, so I will be with you.",
+    "text": "No one will be able to stand up against you all the days of your life. As I was with Moses, so I will be with you; I will never leave you nor forsake you."
+   },
+   {
+    "book": 9,
+    "ref": "1 Samuel 2:2",
+    "context": "From Hannah's prayer after Samuel's birth.",
+    "text": "There is no one holy like the Lord; there is no one besides you; there is no Rock like our God."
+   },
+   {
+    "book": 11,
+    "ref": "1 Kings 3:9",
+    "context": "Solomon's request at Gibeon.",
+    "text": "So give your servant a discerning heart to govern your people and to distinguish between right and wrong. For who is able to govern this great people of yours?"
+   },
+   {
+    "book": 13,
+    "ref": "1 Chronicles 4:10",
+    "context": "The prayer of Jabez.",
+    "text": "Jabez cried out to the God of Israel, Oh, that you would bless me and enlarge my territory! Let your hand be with me, and keep me from harm so that I will be free from pain. And God granted his request."
+   },
+   {
+    "book": 16,
+    "ref": "Nehemiah 6:3",
+    "context": "The wall-builder refuses to come down for a meeting.",
+    "text": "so I sent messengers to them with this reply: I am carrying on a great project and cannot go down. Why should the work stop while I leave it and go down to you?"
+   },
+   {
+    "book": 18,
+    "ref": "Job 28:28",
+    "context": "Where wisdom is found, from Job's poem on mining.",
+    "text": "And he said to man, ‘The fear of the Lord—that is wisdom, and to shun evil is understanding.’"
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 1:3",
+    "context": "The tree planted by streams of water.",
+    "text": "He is like a tree planted by streams of water, which yields its fruit in season and whose leaf does not wither. Whatever he does prospers."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 25:4-5",
+    "context": "Show me your ways, teach me your paths.",
+    "text": "Show me your ways, O Lord, teach me your paths; guide me in your truth and teach me, for you are God my Savior, and my hope is in you all day long."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 28:7",
+    "context": "My heart leaps for joy.",
+    "text": "The Lord is my strength and my shield; my heart trusts in him, and I am helped. My heart leaps for joy and I will give thanks to him in song."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 31:24",
+    "context": "Be strong and take heart, all you who hope.",
+    "text": "Be strong and take heart, all you who hope in the Lord."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 138:8",
+    "context": "The Lord will vindicate me.",
+    "text": "The Lord will fulfill his purpose for me; your love, O Lord, endures forever— do not abandon the works of your hands."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 2:6",
+    "context": "The Lord gives wisdom.",
+    "text": "For the Lord gives wisdom, and from his mouth come knowledge and understanding."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 11:2",
+    "context": "With humility comes wisdom.",
+    "text": "When pride comes, then comes disgrace, but with humility comes wisdom."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 13:12",
+    "context": "Hope deferred makes the heart sick.",
+    "text": "Hope deferred makes the heart sick, but a longing fulfilled is a tree of life."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 15:22",
+    "context": "Plans fail for lack of counsel.",
+    "text": "Plans fail for lack of counsel, but with many advisers they succeed."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 16:24",
+    "context": "Gracious words are a honeycomb.",
+    "text": "Pleasant words are a honeycomb, sweet to the soul and healing to the bones."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 31:25",
+    "context": "Clothed with strength and dignity.",
+    "text": "She is clothed with strength and dignity; she can laugh at the days to come."
+   },
+   {
+    "book": 21,
+    "ref": "Ecclesiastes 1:9",
+    "context": "Nothing new under the sun.",
+    "text": "What has been will be again, what has been done will be done again; there is nothing new under the sun."
+   },
+   {
+    "book": 22,
+    "ref": "Song of Songs 6:3",
+    "context": "I am my beloved's and my beloved is mine.",
+    "text": "I am my lover’s and my lover is mine; he browses among the lilies."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 12:2",
+    "context": "Surely God is my salvation, from a short song of praise.",
+    "text": "Surely God is my salvation; I will trust and not be afraid. The Lord, the Lord, is my strength and my song; he has become my salvation."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 30:15",
+    "context": "In repentance and rest is your salvation.",
+    "text": "This is what the Sovereign Lord, the Holy One of Israel, says: In repentance and rest is your salvation, in quietness and trust is your strength, but you would have none of it."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 52:7",
+    "context": "How beautiful on the mountains are the feet.",
+    "text": "How beautiful on the mountains are the feet of those who bring good news, who proclaim peace, who bring good tidings, who proclaim salvation, who say to Zion, Your God reigns!"
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 54:10",
+    "context": "Though the mountains be shaken.",
+    "text": "Though the mountains be shaken and the hills be removed, yet my unfailing love for you will not be shaken nor my covenant of peace be removed, says the Lord, who has compassion on you."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 60:1",
+    "context": "Arise, shine, for your light has come.",
+    "text": "The Glory of Zion Arise, shine, for your light has come, and the glory of the Lord rises upon you."
+   },
+   {
+    "book": 24,
+    "ref": "Jeremiah 9:23-24",
+    "context": "Let not the wise boast of their wisdom.",
+    "text": "This is what the Lord says: Let not the wise man boast of his wisdom or the strong man boast of his strength or the rich man boast of his riches, but let him who boasts boast about this: that he understands and knows me, that I am the Lord, who exercises kindness, justice and righteousness on earth, for in these I delight, declares the Lord."
+   },
+   {
+    "book": 24,
+    "ref": "Jeremiah 31:25",
+    "context": "I will refresh the weary.",
+    "text": "I will refresh the weary and satisfy the faint."
+   },
+   {
+    "book": 25,
+    "ref": "Lamentations 3:31-32",
+    "context": "No one is cast off by the Lord forever.",
+    "text": "For men are not cast off by the Lord forever. Though he brings grief, he will show compassion, so great is his unfailing love."
+   },
+   {
+    "book": 26,
+    "ref": "Ezekiel 34:16",
+    "context": "The shepherd who searches for the lost sheep.",
+    "text": "I will search for the lost and bring back the strays. I will bind up the injured and strengthen the weak, but the sleek and the strong I will destroy. I will shepherd the flock with justice."
+   },
+   {
+    "book": 27,
+    "ref": "Daniel 6:22",
+    "context": "A report from the lions' den, the morning after.",
+    "text": "My God sent his angel, and he shut the mouths of the lions. They have not hurt me, because I was found innocent in his sight. Nor have I ever done any wrong before you, O king."
+   },
+   {
+    "book": 28,
+    "ref": "Hosea 10:12",
+    "context": "Break up your unplowed ground.",
+    "text": "Sow for yourselves righteousness, reap the fruit of unfailing love, and break up your unplowed ground; for it is time to seek the Lord, until he comes and showers righteousness on you."
+   },
+   {
+    "book": 29,
+    "ref": "Joel 2:12-13",
+    "context": "Rend your heart and not your garments.",
+    "text": "Rend Your Heart Even now, declares the Lord, return to me with all your heart, with fasting and weeping and mourning. Rend your heart and not your garments. Return to the Lord your God, for he is gracious and compassionate, slow to anger and abounding in love, and he relents from sending calamity."
+   },
+   {
+    "book": 30,
+    "ref": "Amos 3:7",
+    "context": "The Lord does nothing without revealing his plan to the prophets.",
+    "text": "Surely the Sovereign Lord does nothing without revealing his plan to his servants the prophets."
+   },
+   {
+    "book": 30,
+    "ref": "Amos 4:12",
+    "context": "Prepare to meet your God.",
+    "text": "Therefore this is what I will do to you, Israel, and because I will do this to you, prepare to meet your God, O Israel."
+   },
+   {
+    "book": 31,
+    "ref": "Obadiah 15",
+    "context": "The day of the Lord is near, from the Old Testament's shortest book.",
+    "text": "The day of the Lord is near for all nations. As you have done, it will be done to you; your deeds will return upon your own head."
+   },
+   {
+    "book": 32,
+    "ref": "Jonah 2:9",
+    "context": "The end of the prayer from inside the fish.",
+    "text": "But I, with a song of thanksgiving, will sacrifice to you. What I have vowed I will make good. Salvation comes from the Lord."
+   },
+   {
+    "book": 33,
+    "ref": "Micah 5:2",
+    "context": "Bethlehem Ephrathah, small among the clans of Judah.",
+    "text": "But you, Bethlehem Ephrathah, though you are small among the clans of Judah, out of you will come for me one who will be ruler over Israel, whose origins are from of old, from ancient times."
+   },
+   {
+    "book": 33,
+    "ref": "Micah 7:8",
+    "context": "Though I sit in darkness, the Lord will be my light.",
+    "text": "Israel Will Rise Do not gloat over me, my enemy! Though I have fallen, I will rise. Though I sit in darkness, the Lord will be my light."
+   },
+   {
+    "book": 34,
+    "ref": "Nahum 1:3",
+    "context": "Slow to anger but great in power.",
+    "text": "The Lord is slow to anger and great in power; the Lord will not leave the guilty unpunished. His way is in the whirlwind and the storm, and clouds are the dust of his feet."
+   },
+   {
+    "book": 35,
+    "ref": "Habakkuk 3:19",
+    "context": "Feet like the feet of a deer: the last verse of the book.",
+    "text": "The Sovereign Lord is my strength; he makes my feet like the feet of a deer, he enables me to go on the heights. For the director of music. On my stringed instruments."
+   },
+   {
+    "book": 36,
+    "ref": "Zephaniah 2:3",
+    "context": "Seek the Lord, all you humble of the land.",
+    "text": "Seek the Lord, all you humble of the land, you who do what he commands. Seek righteousness, seek humility; perhaps you will be sheltered on the day of the Lord’s anger."
+   },
+   {
+    "book": 37,
+    "ref": "Haggai 2:9",
+    "context": "The glory of this present house will be greater.",
+    "text": "‘The glory of this present house will be greater than the glory of the former house,’ says the Lord Almighty. ‘And in this place I will grant peace,’ declares the Lord Almighty."
+   },
+   {
+    "book": 38,
+    "ref": "Zechariah 1:3",
+    "context": "Return to me, and I will return to you.",
+    "text": "Therefore tell the people: This is what the Lord Almighty says: ‘Return to me,’ declares the Lord Almighty, ‘and I will return to you,’ says the Lord Almighty."
+   },
+   {
+    "book": 38,
+    "ref": "Zechariah 2:8",
+    "context": "The apple of his eye.",
+    "text": "For this is what the Lord Almighty says: After he has honored me and has sent me against the nations that have plundered you—for whoever touches you touches the apple of his eye—"
+   },
+   {
+    "book": 39,
+    "ref": "Malachi 4:2",
+    "context": "The sun of righteousness with healing in its rays.",
+    "text": "But for you who revere my name, the sun of righteousness will rise with healing in its wings. And you will go out and leap like calves released from the stall."
+   },
+   {
+    "book": 43,
+    "ref": "John 1:5",
+    "context": "The light shines in the darkness.",
+    "text": "The light shines in the darkness, but the darkness has not understood it."
+   },
+   {
+    "book": 43,
+    "ref": "John 17:3",
+    "context": "Now this is eternal life, from Jesus' high-priestly prayer.",
+    "text": "Now this is eternal life: that they may know you, the only true God, and Jesus Christ, whom you have sent."
+   },
+   {
+    "book": 43,
+    "ref": "John 8:36",
+    "context": "If the Son sets you free.",
+    "text": "So if the Son sets you free, you will be free indeed."
+   },
+   {
+    "book": 44,
+    "ref": "Acts 2:42",
+    "context": "The first church's four devotions.",
+    "text": "The Fellowship of the Believers They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+   },
+   {
+    "book": 44,
+    "ref": "Acts 4:13",
+    "context": "Unschooled, ordinary men who had been with Jesus.",
+    "text": "When they saw the courage of Peter and John and realized that they were unschooled, ordinary men, they were astonished and they took note that these men had been with Jesus."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 8:26",
+    "context": "The Spirit intercedes with wordless groans.",
+    "text": "In the same way, the Spirit helps us in our weakness. We do not know what we ought to pray for, but the Spirit himself intercedes for us with groans that words cannot express."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 11:33",
+    "context": "Oh, the depth of the riches of the wisdom and knowledge of God!",
+    "text": "Doxology Oh, the depth of the riches of the wisdom and knowledge of God! How unsearchable his judgments, and his paths beyond tracing out!"
+   },
+   {
+    "book": 46,
+    "ref": "1 Corinthians 1:27",
+    "context": "God chose the foolish things of the world.",
+    "text": "But God chose the foolish things of the world to shame the wise; God chose the weak things of the world to shame the strong."
+   },
+   {
+    "book": 46,
+    "ref": "1 Corinthians 3:16",
+    "context": "Don't you know that you yourselves are God's temple?",
+    "text": "Don’t you know that you yourselves are God’s temple and that God’s Spirit lives in you?"
+   },
+   {
+    "book": 46,
+    "ref": "1 Corinthians 12:27",
+    "context": "You are the body of Christ.",
+    "text": "Now you are the body of Christ, and each one of you is a part of it."
+   },
+   {
+    "book": 47,
+    "ref": "2 Corinthians 1:3-4",
+    "context": "The God of all comfort.",
+    "text": "The God of All Comfort Praise be to the God and Father of our Lord Jesus Christ, the Father of compassion and the God of all comfort, who comforts us in all our troubles, so that we can comfort those in any trouble with the comfort we ourselves have received from God."
+   },
+   {
+    "book": 48,
+    "ref": "Galatians 5:16",
+    "context": "Walk by the Spirit.",
+    "text": "Life by the Spirit So I say, live by the Spirit, and you will not gratify the desires of the sinful nature."
+   },
+   {
+    "book": 48,
+    "ref": "Galatians 6:10",
+    "context": "Do good to all people, especially the family of believers.",
+    "text": "Therefore, as we have opportunity, let us do good to all people, especially to those who belong to the family of believers."
+   },
+   {
+    "book": 50,
+    "ref": "Philippians 2:3-4",
+    "context": "Value others above yourselves.",
+    "text": "Do nothing out of selfish ambition or vain conceit, but in humility consider others better than yourselves. Each of you should look not only to your own interests, but also to the interests of others."
+   },
+   {
+    "book": 51,
+    "ref": "Colossians 1:16-17",
+    "context": "In him all things hold together.",
+    "text": "For by him all things were created: things in heaven and on earth, visible and invisible, whether thrones or powers or rulers or authorities; all things were created by him and for him. He is before all things, and in him all things hold together."
+   },
+   {
+    "book": 54,
+    "ref": "1 Timothy 2:5",
+    "context": "One mediator between God and mankind.",
+    "text": "For there is one God and one mediator between God and men, the man Christ Jesus,"
+   },
+   {
+    "book": 58,
+    "ref": "Hebrews 7:25",
+    "context": "He always lives to intercede for them.",
+    "text": "Therefore he is able to save completely those who come to God through him, because he always lives to intercede for them."
+   },
+   {
+    "book": 59,
+    "ref": "James 1:12",
+    "context": "Blessed is the one who perseveres under trial.",
+    "text": "Blessed is the man who perseveres under trial, because when he has stood the test, he will receive the crown of life that God has promised to those who love him."
+   },
+   {
+    "book": 60,
+    "ref": "1 Peter 5:8-9",
+    "context": "Your enemy the devil prowls around like a roaring lion.",
+    "text": "Be self-controlled and alert. Your enemy the devil prowls around like a roaring lion looking for someone to devour. Resist him, standing firm in the faith, because you know that your brothers throughout the world are undergoing the same kind of sufferings."
+   },
+   {
+    "book": 66,
+    "ref": "Revelation 2:10",
+    "context": "Be faithful, even to the point of death: the letter to Smyrna.",
+    "text": "Do not be afraid of what you are about to suffer. I tell you, the devil will put some of you in prison to test you, and you will suffer persecution for ten days. Be faithful, even to the point of death, and I will give you the crown of life."
    }
   ]
  },
@@ -746,6 +2330,402 @@ const VERSE_TIERS = [
     "ref": "Hebrews 13:8",
     "context": "One line on the unchanging Christ, near the end of Hebrews.",
     "text": "Jesus Christ is the same yesterday and today and forever."
+   },
+   {
+    "book": 1,
+    "ref": "Genesis 2:18",
+    "context": "Not good for the man to be alone.",
+    "text": "The Lord God said, It is not good for the man to be alone. I will make a helper suitable for him."
+   },
+   {
+    "book": 2,
+    "ref": "Exodus 15:2",
+    "context": "The Song of Moses on the far bank of the Red Sea.",
+    "text": "The Lord is my strength and my song; he has become my salvation. He is my God, and I will praise him, my father’s God, and I will exalt him."
+   },
+   {
+    "book": 3,
+    "ref": "Leviticus 20:26",
+    "context": "Be holy, because I am holy: set apart from the nations.",
+    "text": "You are to be holy to me because I, the Lord, am holy, and I have set you apart from the nations to be my own."
+   },
+   {
+    "book": 4,
+    "ref": "Numbers 14:18",
+    "context": "Moses quotes God's own self-description back to him at Kadesh.",
+    "text": "‘The Lord is slow to anger, abounding in love and forgiving sin and rebellion. Yet he does not leave the guilty unpunished; he punishes the children for the sin of the fathers to the third and fourth generation.’"
+   },
+   {
+    "book": 5,
+    "ref": "Deuteronomy 32:4",
+    "context": "He is the Rock: the opening of Moses' song.",
+    "text": "He is the Rock, his works are perfect, and all his ways are just. A faithful God who does no wrong, upright and just is he."
+   },
+   {
+    "book": 7,
+    "ref": "Judges 6:12",
+    "context": "The angel greets Gideon, hiding in a winepress.",
+    "text": "When the angel of the Lord appeared to Gideon, he said, The Lord is with you, mighty warrior."
+   },
+   {
+    "book": 10,
+    "ref": "2 Samuel 7:22",
+    "context": "David's prayer after the covenant promise through Nathan.",
+    "text": "How great you are, O Sovereign Lord! There is no one like you, and there is no God but you, as we have heard with our own ears."
+   },
+   {
+    "book": 12,
+    "ref": "2 Kings 20:5",
+    "context": "God's reply to Hezekiah's tears, via Isaiah.",
+    "text": "Go back and tell Hezekiah, the leader of my people, ‘This is what the Lord, the God of your father David, says: I have heard your prayer and seen your tears; I will heal you. On the third day from now you will go up to the temple of the Lord."
+   },
+   {
+    "book": 13,
+    "ref": "1 Chronicles 28:9",
+    "context": "David's charge to Solomon about the temple and the heart.",
+    "text": "And you, my son Solomon, acknowledge the God of your father, and serve him with wholehearted devotion and with a willing mind, for the Lord searches every heart and understands every motive behind the thoughts. If you seek him, he will be found by you; but if you forsake him, he will reject you forever."
+   },
+   {
+    "book": 14,
+    "ref": "2 Chronicles 15:7",
+    "context": "Azariah the prophet to King Asa: your work will be rewarded.",
+    "text": "But as for you, be strong and do not give up, for your work will be rewarded."
+   },
+   {
+    "book": 63,
+    "ref": "2 John 6",
+    "context": "This is love: that we walk in obedience, from a one-chapter letter.",
+    "text": "And this is love: that we walk in obedience to his commands. As you have heard from the beginning, his command is that you walk in love."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 111:10",
+    "context": "The fear of the Lord, from an acrostic psalm.",
+    "text": "The fear of the Lord is the beginning of wisdom; all who follow his precepts have good understanding. To him belongs eternal praise."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 24:16",
+    "context": "The righteous fall seven times and rise again.",
+    "text": "for though a righteous man falls seven times, he rises again, but the wicked are brought down by calamity."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 27:1",
+    "context": "Do not boast about tomorrow.",
+    "text": "Do not boast about tomorrow, for you do not know what a day may bring forth."
+   },
+   {
+    "book": 22,
+    "ref": "Song of Songs 2:4",
+    "context": "His banner over me is love.",
+    "text": "He has taken me to the banquet hall, and his banner over me is love."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 46:4",
+    "context": "Even to your old age and gray hairs.",
+    "text": "Even to your old age and gray hairs I am he, I am he who will sustain you. I have made you and I will carry you; I will sustain you and I will rescue you."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 59:1",
+    "context": "The arm of the Lord is not too short to save.",
+    "text": "Sin, Confession and Redemption Surely the arm of the Lord is not too short to save, nor his ear too dull to hear."
+   },
+   {
+    "book": 24,
+    "ref": "Jeremiah 15:16",
+    "context": "When your words came, I ate them.",
+    "text": "When your words came, I ate them; they were my joy and my heart’s delight, for I bear your name, O Lord God Almighty."
+   },
+   {
+    "book": 26,
+    "ref": "Ezekiel 36:27",
+    "context": "The verse after the heart transplant: a new Spirit.",
+    "text": "And I will put my Spirit in you and move you to follow my decrees and be careful to keep my laws."
+   },
+   {
+    "book": 28,
+    "ref": "Hosea 14:9",
+    "context": "The last verse of Hosea.",
+    "text": "Who is wise? He will realize these things. Who is discerning? He will understand them. The ways of the Lord are right; the righteous walk in them, but the rebellious stumble in them."
+   },
+   {
+    "book": 1,
+    "ref": "Genesis 32:26",
+    "context": "Jacob wrestling until daybreak: I will not let you go.",
+    "text": "Then the man said, Let me go, for it is daybreak. But Jacob replied, I will not let you go unless you bless me."
+   },
+   {
+    "book": 2,
+    "ref": "Exodus 14:13",
+    "context": "Stand firm: Moses to a terrified Israel at the sea's edge.",
+    "text": "Moses answered the people, Do not be afraid. Stand firm and you will see the deliverance the Lord will bring you today. The Egyptians you see today you will never see again."
+   },
+   {
+    "book": 5,
+    "ref": "Deuteronomy 4:29",
+    "context": "You will find him if you seek him with all your heart.",
+    "text": "But if from there you seek the Lord your God, you will find him if you look for him with all your heart and with all your soul."
+   },
+   {
+    "book": 5,
+    "ref": "Deuteronomy 29:29",
+    "context": "The secret things belong to the Lord.",
+    "text": "The secret things belong to the Lord our God, but the things revealed belong to us and to our children forever, that we may follow all the words of this law."
+   },
+   {
+    "book": 6,
+    "ref": "Joshua 23:14",
+    "context": "Joshua's farewell: not one promise has failed.",
+    "text": "Now I am about to go the way of all the earth. You know with all your heart and soul that not one of all the good promises the Lord your God gave you has failed. Every promise has been fulfilled; not one has failed."
+   },
+   {
+    "book": 7,
+    "ref": "Judges 7:2",
+    "context": "God trims Gideon's army so Israel can't boast.",
+    "text": "The Lord said to Gideon, You have too many men for me to deliver Midian into their hands. In order that Israel may not boast against me that her own strength has saved her,"
+   },
+   {
+    "book": 9,
+    "ref": "1 Samuel 17:45",
+    "context": "David's speech to Goliath, before the sling.",
+    "text": "David said to the Philistine, You come against me with sword and spear and javelin, but I come against you in the name of the Lord Almighty, the God of the armies of Israel, whom you have defied."
+   },
+   {
+    "book": 10,
+    "ref": "2 Samuel 24:24",
+    "context": "David refuses to offer what costs him nothing.",
+    "text": "But the king replied to Araunah, No, I insist on paying you for it. I will not sacrifice to the Lord my God burnt offerings that cost me nothing. So David bought the threshing floor and the oxen and paid fifty shekels of silver for them."
+   },
+   {
+    "book": 11,
+    "ref": "1 Kings 8:56",
+    "context": "Solomon at the temple dedication: not one word has failed.",
+    "text": "Praise be to the Lord, who has given rest to his people Israel just as he promised. Not one word has failed of all the good promises he gave through his servant Moses."
+   },
+   {
+    "book": 12,
+    "ref": "2 Kings 6:17",
+    "context": "Elisha prays for his servant's eyes: hills full of chariots of fire.",
+    "text": "And Elisha prayed, O Lord, open his eyes so he may see. Then the Lord opened the servant’s eyes, and he looked and saw the hills full of horses and chariots of fire all around Elisha."
+   },
+   {
+    "book": 14,
+    "ref": "2 Chronicles 32:8",
+    "context": "Hezekiah rallies Jerusalem against Sennacherib.",
+    "text": "With him is only the arm of flesh, but with us is the Lord our God to help us and to fight our battles. And the people gained confidence from what Hezekiah the king of Judah said."
+   },
+   {
+    "book": 16,
+    "ref": "Nehemiah 4:14",
+    "context": "The governor rallies the wall-builders: remember the Lord.",
+    "text": "After I looked things over, I stood up and said to the nobles, the officials and the rest of the people, Don’t be afraid of them. Remember the Lord, who is great and awesome, and fight for your brothers, your sons and your daughters, your wives and your homes."
+   },
+   {
+    "book": 18,
+    "ref": "Job 13:15",
+    "context": "Though he slay me, yet will I hope in him.",
+    "text": "Though he slay me, yet will I hope in him; I will surely defend my ways to his face."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 63:3",
+    "context": "Your love is better than life, from a psalm written in the desert.",
+    "text": "Because your love is better than life, my lips will glorify you."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 130:5",
+    "context": "I wait for the Lord, from the depths.",
+    "text": "I wait for the Lord, my soul waits, and in his word I put my hope."
+   },
+   {
+    "book": 19,
+    "ref": "Psalm 143:8",
+    "context": "Let the morning bring me word of your unfailing love.",
+    "text": "Let the morning bring me word of your unfailing love, for I have put my trust in you. Show me the way I should go, for to you I lift up my soul."
+   },
+   {
+    "book": 20,
+    "ref": "Proverbs 25:11",
+    "context": "Apples of gold in settings of silver.",
+    "text": "A word aptly spoken is like apples of gold in settings of silver."
+   },
+   {
+    "book": 21,
+    "ref": "Ecclesiastes 7:8",
+    "context": "The end of a matter is better than its beginning.",
+    "text": "The end of a matter is better than its beginning, and patience is better than pride."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 49:16",
+    "context": "Engraved on the palms of my hands.",
+    "text": "See, I have engraved you on the palms of my hands; your walls are ever before me."
+   },
+   {
+    "book": 23,
+    "ref": "Isaiah 65:24",
+    "context": "Before they call I will answer.",
+    "text": "Before they call I will answer; while they are still speaking I will hear."
+   },
+   {
+    "book": 24,
+    "ref": "Jeremiah 20:9",
+    "context": "His word is like a fire shut up in my bones.",
+    "text": "But if I say, I will not mention him or speak any more in his name, his word is in my heart like a fire, a fire shut up in my bones. I am weary of holding it in; indeed, I cannot."
+   },
+   {
+    "book": 27,
+    "ref": "Daniel 2:21",
+    "context": "He changes times and seasons; he deposes kings.",
+    "text": "He changes times and seasons; he sets up kings and deposes them. He gives wisdom to the wise and knowledge to the discerning."
+   },
+   {
+    "book": 28,
+    "ref": "Hosea 6:3",
+    "context": "Let us press on to acknowledge the Lord.",
+    "text": "Let us acknowledge the Lord; let us press on to acknowledge him. As surely as the sun rises, he will appear; he will come to us like the winter rains, like the spring rains that water the earth."
+   },
+   {
+    "book": 32,
+    "ref": "Jonah 4:2",
+    "context": "The prophet sulks about Nineveh being spared.",
+    "text": "He prayed to the Lord, O Lord, is this not what I said when I was still at home? That is why I was so quick to flee to Tarshish. I knew that you are a gracious and compassionate God, slow to anger and abounding in love, a God who relents from sending calamity."
+   },
+   {
+    "book": 35,
+    "ref": "Habakkuk 2:20",
+    "context": "The Lord is in his holy temple; let all the earth be silent.",
+    "text": "But the Lord is in his holy temple; let all the earth be silent before him."
+   },
+   {
+    "book": 38,
+    "ref": "Zechariah 13:9",
+    "context": "I will refine them like silver.",
+    "text": "This third I will bring into the fire; I will refine them like silver and test them like gold. They will call on my name and I will answer them; I will say, ‘They are my people,’ and they will say, ‘The Lord is our God.’"
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 13:44",
+    "context": "The kingdom of heaven is like treasure hidden in a field.",
+    "text": "The Parables of the Hidden Treasure and the Pearl The kingdom of heaven is like treasure hidden in a field. When a man found it, he hid it again, and then in his joy went and sold all he had and bought that field."
+   },
+   {
+    "book": 40,
+    "ref": "Matthew 22:14",
+    "context": "Many are invited, but few are chosen.",
+    "text": "For many are invited, but few are chosen."
+   },
+   {
+    "book": 41,
+    "ref": "Mark 9:24",
+    "context": "I do believe; help me overcome my unbelief!",
+    "text": "Immediately the boy’s father exclaimed, I do believe; help me overcome my unbelief!"
+   },
+   {
+    "book": 41,
+    "ref": "Mark 2:17",
+    "context": "It is not the healthy who need a doctor.",
+    "text": "On hearing this, Jesus said to them, It is not the healthy who need a doctor, but the sick. I have not come to call the righteous, but sinners."
+   },
+   {
+    "book": 42,
+    "ref": "Luke 16:10",
+    "context": "Whoever can be trusted with very little.",
+    "text": "Whoever can be trusted with very little can also be trusted with much, and whoever is dishonest with very little will also be dishonest with much."
+   },
+   {
+    "book": 42,
+    "ref": "Luke 9:62",
+    "context": "No one who puts a hand to the plow and looks back.",
+    "text": "Jesus replied, No one who puts his hand to the plow and looks back is fit for service in the kingdom of God."
+   },
+   {
+    "book": 44,
+    "ref": "Acts 10:34-35",
+    "context": "Peter at Cornelius' house: God does not show favoritism.",
+    "text": "Then Peter began to speak: I now realize how true it is that God does not show favoritism but accepts men from every nation who fear him and do what is right."
+   },
+   {
+    "book": 45,
+    "ref": "Romans 12:11",
+    "context": "Never be lacking in zeal.",
+    "text": "Never be lacking in zeal, but keep your spiritual fervor, serving the Lord."
+   },
+   {
+    "book": 46,
+    "ref": "1 Corinthians 16:13",
+    "context": "Be on your guard; stand firm; be courageous; be strong.",
+    "text": "Be on your guard; stand firm in the faith; be men of courage; be strong."
+   },
+   {
+    "book": 47,
+    "ref": "2 Corinthians 3:18",
+    "context": "Transformed into his image with ever-increasing glory.",
+    "text": "And we, who with unveiled faces all reflect the Lord’s glory, are being transformed into his likeness with ever-increasing glory, which comes from the Lord, who is the Spirit."
+   },
+   {
+    "book": 48,
+    "ref": "Galatians 1:10",
+    "context": "Am I now trying to win the approval of human beings, or of God?",
+    "text": "Am I now trying to win the approval of men, or of God? Or am I trying to please men? If I were still trying to please men, I would not be a servant of Christ."
+   },
+   {
+    "book": 51,
+    "ref": "Colossians 4:2",
+    "context": "Devote yourselves to prayer.",
+    "text": "Further Instructions Devote yourselves to prayer, being watchful and thankful."
+   },
+   {
+    "book": 53,
+    "ref": "2 Thessalonians 3:16",
+    "context": "The Lord of peace himself give you peace at all times.",
+    "text": "Final Greetings Now may the Lord of peace himself give you peace at all times and in every way. The Lord be with all of you."
+   },
+   {
+    "book": 55,
+    "ref": "2 Timothy 4:2",
+    "context": "Preach the word; be prepared in season and out.",
+    "text": "Preach the Word; be prepared in season and out of season; correct, rebuke and encourage—with great patience and careful instruction."
+   },
+   {
+    "book": 58,
+    "ref": "Hebrews 13:2",
+    "context": "Some people have shown hospitality to angels without knowing it.",
+    "text": "Do not forget to entertain strangers, for by so doing some people have entertained angels without knowing it."
+   },
+   {
+    "book": 59,
+    "ref": "James 4:6",
+    "context": "God opposes the proud but shows favor to the humble.",
+    "text": "But he gives us more grace. That is why Scripture says: God opposes the proud but gives grace to the humble."
+   },
+   {
+    "book": 61,
+    "ref": "2 Peter 3:8",
+    "context": "With the Lord a day is like a thousand years.",
+    "text": "But do not forget this one thing, dear friends: With the Lord a day is like a thousand years, and a thousand years are like a day."
+   },
+   {
+    "book": 62,
+    "ref": "1 John 4:1",
+    "context": "Test the spirits.",
+    "text": "Test the Spirits Dear friends, do not believe every spirit, but test the spirits to see whether they are from God, because many false prophets have gone out into the world."
+   },
+   {
+    "book": 64,
+    "ref": "3 John 11",
+    "context": "Do not imitate what is evil but what is good.",
+    "text": "Dear friend, do not imitate what is evil but what is good. Anyone who does what is good is from God. Anyone who does what is evil has not seen God."
+   },
+   {
+    "book": 66,
+    "ref": "Revelation 22:20",
+    "context": "The second-to-last verse of the Bible.",
+    "text": "He who testifies to these things says, Yes, I am coming soon. Amen. Come, Lord Jesus."
    }
   ]
  }
