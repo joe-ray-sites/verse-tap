@@ -43,6 +43,7 @@ Share text uses emoji squares per round: 🎯 bullseye, 🟩 1 off, 🟨 2–3, 
 | `verses.js` | Content: `BIBLE_BOOKS` (66 NIV names in order) and `VERSE_TIERS`, 5 tiers × 24 entries of `{book, ref, context, text}`. |
 | `tools/fetch_verses.py` | Regenerates `verses.js` from bolls.life (NIV). Edit its `TIERS` list to add/swap verses, then `python3 tools/fetch_verses.py`. It strips psalm superscriptions and warns if a verse's text names its own book. |
 | `.claude/launch.json` | Dev server (`python3 -m http.server 8473`) for Claude's browser preview. |
+| `Verse Tap.png` | Source artwork for the icons. `icon-512.png` and the favicons are the white background knocked out to transparency; `apple-touch-icon.png` is the same crop composited on the icon's edge blue (iOS paints black behind transparency). Icon links carry `?v=N` — bump it when the artwork changes. |
 
 ## Framework conventions kept
 
